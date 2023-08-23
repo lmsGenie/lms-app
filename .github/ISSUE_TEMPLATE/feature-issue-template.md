@@ -1,9 +1,9 @@
 ---
 name: Feature Issue template
 about: Describe this issue template's purpose here.
-title: "[FEAT] : Short Title"
+title: "[FEAT]: Short Title"
 labels: enhancement
-assignees: ''
+assignees: sub1120
 
 ---
 
