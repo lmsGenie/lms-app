@@ -7,12 +7,10 @@ assignees: ''
 
 ---
 
-### Issue description 
+### Summary
 NA
-### Is related with?
-- [ ] Frontend UI
-- [ ] API Creation
-- [ ] API Integration
-
-### Resources (Design/Assets)
-NA
+### Answer following questions?
+1. Is your feature related to FrontEnd? No
+2. Is your feature related to Backend? No
+3. Is your feature related to API Integration? No
+### Resources
