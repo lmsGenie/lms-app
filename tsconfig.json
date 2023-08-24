@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@lmsGenie/ui-components": ["libs/ui-components/src/index.ts"],
+      "@lmsGenie/ui-components/*": ["libs/ui-components/src/*"]
+    }
+  }
+}
