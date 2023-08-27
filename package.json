@@ -9,7 +9,8 @@
     "lint": "next lint",
     "turbo": "next dev --turbo",
     "format": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore ."
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.5.6",
@@ -31,8 +32,11 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
     "prettier": "3.0.2",
-    "prettier-plugin-tailwindcss": "^0.5.3"
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "husky": "^8.0.0"
   }
 }
