@@ -11,9 +11,8 @@ assignees: ''
 NA
 
 ### Answer the following questions.
-1. Is your feature related to FrontEnd? Yes
-2. Is your feature related to the Backend? No
-3. Is your feature related to API Integration? No
-4. Is your feature related to repository setup? Yes
+1. Is your feature related to UI Development? Yes
+2. Is your feature related to API Integration? No
+3. Is your feature related to repository setup? No
 
 ### Resources
