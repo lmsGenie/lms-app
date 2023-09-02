@@ -18,7 +18,7 @@ const Header = () => {
         <ul className="flex  gap-4  md:gap-6 lg:gap-8 ">
           <li>
             <Link
-              className="hover:border-primary-500 active:border-primary-500 flex h-16 w-20 items-center justify-center border-t-2 border-gray-900 transition-colors ease-in-out hover:border-t-2 hover:text-white"
+              className="flex h-16 w-20 items-center justify-center border-t-2 border-gray-900 transition-colors ease-in-out hover:border-t-2 hover:border-primary-500 hover:text-white active:border-primary-500"
               href="/"
             >
               Home
@@ -26,7 +26,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="hover:border-primary-500 active:border-primary-500 flex h-16 w-20 items-center justify-center  border-t-2 border-gray-900  transition-colors ease-in-out hover:border-t-2 hover:text-white"
+              className="flex h-16 w-20 items-center justify-center border-t-2 border-gray-900  transition-colors ease-in-out  hover:border-t-2 hover:border-primary-500 hover:text-white active:border-primary-500"
               href="/"
             >
               Courses
@@ -34,7 +34,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="hover:border-primary-500 active:border-primary-500 flex h-16 w-20 items-center justify-center  border-t-2 border-gray-900  transition-colors ease-in-out hover:border-t-2 hover:text-white"
+              className="flex h-16 w-20 items-center justify-center border-t-2 border-gray-900  transition-colors ease-in-out  hover:border-t-2 hover:border-primary-500 hover:text-white active:border-primary-500"
               href="/"
             >
               About
@@ -42,7 +42,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="hover:border-primary-500 active:border-primary-500 flex h-16 w-20 items-center justify-center  border-t-2 border-gray-900  transition-colors ease-in-out hover:border-t-2 hover:text-white"
+              className="flex h-16 w-20 items-center justify-center border-t-2 border-gray-900  transition-colors ease-in-out  hover:border-t-2 hover:border-primary-500 hover:text-white active:border-primary-500"
               href="/"
             >
               Contact
@@ -50,7 +50,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="hover:border-primary-500 active:border-primary-500 flex h-16 w-48 items-center justify-center  border-t-2 border-gray-900  transition-colors ease-in-out hover:border-t-2 hover:text-white"
+              className="flex h-16 w-48 items-center justify-center border-t-2 border-gray-900  transition-colors ease-in-out  hover:border-t-2 hover:border-primary-500 hover:text-white active:border-primary-500"
               href="/"
             >
               Become an Instructor
