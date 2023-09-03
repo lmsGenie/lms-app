@@ -1,4 +1,5 @@
 export type idType =
+  | "EtutorLogo"
   | "YoutubeLogo"
   | "XSquare"
   | "XCircle"
