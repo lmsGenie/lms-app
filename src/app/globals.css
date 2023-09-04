@@ -89,9 +89,9 @@
     --destructive: 0 100% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: var(--primary-500);
-    --input: var(--primary-500);
-    --ring: var(--primary-600);
+    --border: var(--gray-100);
+    --input: var(--gray-200);
+    --ring: var(--gray-200);
 
     --radius: 0.1rem;
   }
@@ -120,10 +120,6 @@
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: var(--gray-900);
-
-    --border: var(--gray-100);
-    --input: var(--gray-100);
-    --ring: var(--gray-200);
   }
 }
 
