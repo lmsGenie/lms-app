@@ -30,49 +30,54 @@ const Footer = () => {
             mattis odio at.
           </p>
           <div className="mt-4 flex gap-2">
-            <Link href="/">
-              <div className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700">
-                <Icon
-                  id="FacebookLogo"
-                  className="h-6 w-6 fill-white stroke-none"
-                />
-              </div>
+            <Link
+              href="/"
+              className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700"
+            >
+              <Icon
+                id="FacebookLogo"
+                className="h-6 w-6 fill-white stroke-none"
+              />
             </Link>
 
-            <Link href="/">
-              <div className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700">
-                <Icon
-                  id="InstagramLogo"
-                  className="h-6 w-6 fill-white stroke-none"
-                />
-              </div>
+            <Link
+              href="/"
+              className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700"
+            >
+              <Icon
+                id="InstagramLogo"
+                className="h-6 w-6 fill-white stroke-none"
+              />
             </Link>
 
-            <Link href="/">
-              <div className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700">
-                <Icon
-                  id="LinkedinLogo"
-                  className="h-6 w-6 fill-white stroke-none"
-                />
-              </div>
+            <Link
+              href="/"
+              className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700"
+            >
+              <Icon
+                id="LinkedinLogo"
+                className="h-6 w-6 fill-white stroke-none"
+              />
             </Link>
 
-            <Link href="/">
-              <div className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700">
-                <Icon
-                  id="TwitterLogo"
-                  className="h-6 w-6 fill-white stroke-none"
-                />
-              </div>
+            <Link
+              href="/"
+              className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700"
+            >
+              <Icon
+                id="TwitterLogo"
+                className="h-6 w-6 fill-white stroke-none"
+              />
             </Link>
 
-            <Link href="/">
-              <div className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700">
-                <Icon
-                  id="YoutubeLogo"
-                  className="h-6 w-6 fill-white stroke-none"
-                />
-              </div>
+            <Link
+              href="/"
+              className="flex h-10 w-10 items-center justify-center bg-gray-800 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-700"
+            >
+              <Icon
+                id="YoutubeLogo"
+                className="h-6 w-6 fill-white stroke-none"
+              />
             </Link>
           </div>
         </div>
