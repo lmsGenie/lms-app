@@ -8,8 +8,8 @@ export const categories: ICategory[] = [
     totalCourses: 63476,
   },
   {
-    name: "Buisness",
-    path: "courses/buisness",
+    name: "Business",
+    path: "courses/business",
     iconId: "Handshake",
     totalCourses: 52822,
   },
