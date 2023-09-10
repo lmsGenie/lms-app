@@ -1,26 +1,76 @@
-export const categories = [
+import { ICategory } from "./types/course";
+
+export const categories: ICategory[] = [
   {
-    name: "Web Development",
-    path: "courses/web-development",
+    name: "Label",
+    path: "courses/label",
+    iconId: "Cpu",
+    totalCourses: 63476,
   },
   {
-    name: "Mobile Development",
-    path: "courses/mobile-development",
+    name: "Buisness",
+    path: "courses/buisness",
+    iconId: "Handshake",
+    totalCourses: 52822,
   },
   {
-    name: "Game Development",
-    path: "courses/game-development",
+    name: "Finance & Accounting",
+    path: "courses/finance-accounting",
+    iconId: "CreditCard",
+    totalCourses: 33841,
   },
   {
-    name: "Artificial Intelligence",
-    path: "courses/ai",
+    name: "IT & Software",
+    path: "courses/it-software",
+    iconId: "ChartBarHorizontal",
+    totalCourses: 33841,
   },
   {
-    name: "Financial Skills",
-    path: "courses/finance",
+    name: "Personal Development",
+    path: "courses/personal-development",
+    iconId: "BugDroid",
+    totalCourses: 20126,
   },
   {
-    name: "Data Analytics",
+    name: "Office Productivity",
+    path: "courses/office-productivity",
+    iconId: "Receipt",
+    totalCourses: 13932,
+  },
+  {
+    name: "Marketing",
+    path: "courses/marketing",
+    iconId: "MegaphoneSimple",
+    totalCourses: 12068,
+  },
+  {
+    name: "Photography & Video",
+    path: "courses/photography-video",
+    iconId: "Camera",
+    totalCourses: 6196,
+  },
+  {
+    name: "Lifestyle",
+    path: "courses/lifestyle",
+    iconId: "Package",
+    totalCourses: 2736,
+  },
+  {
+    name: "Design",
+    path: "courses/design",
+    iconId: "PenNib",
+    totalCourses: 2600,
+  },
+  {
+    name: "Health & Fitness",
     path: "courses/data-analytics",
+    iconId: "FirstAidKit",
+    totalCourses: 1678,
+  },
+  {
+    name: "Music",
+    path: "courses/music",
+    iconId: "Headphones",
+    totalCourses: 959,
   },
 ];
