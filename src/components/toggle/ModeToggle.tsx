@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
@@ -13,8 +12,8 @@ import {
 
 import Icon from "../icon/Icon";
 
-export function ModeToggle() {
-  const { setTheme, theme } = useTheme();
+export default function ModeToggle() {
+  const { setTheme } = useTheme();
 
   return (
     <DropdownMenu>

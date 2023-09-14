@@ -5,7 +5,7 @@ import "./globals.css";
 
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import { ThemeProvider } from "@/components/theme-provider";
+import ThemeProvider from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
