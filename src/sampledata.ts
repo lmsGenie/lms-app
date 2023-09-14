@@ -1,6 +1,6 @@
 import { ICategory } from "./types/course";
 
-export const categories: ICategory[] = [
+const categories: ICategory[] = [
   {
     name: "Label",
     path: "courses/label",
@@ -74,3 +74,5 @@ export const categories: ICategory[] = [
     totalCourses: 959,
   },
 ];
+
+export default categories;

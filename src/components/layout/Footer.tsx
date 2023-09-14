@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 import {
@@ -11,7 +10,7 @@ import {
 
 import Icon from "../icon/Icon";
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className="border-t border-gray-800 bg-gray-900 text-gray-500">
       {/* important links section */}
@@ -259,6 +258,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;

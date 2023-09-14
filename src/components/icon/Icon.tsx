@@ -1,6 +1,6 @@
 import { IconProps } from "@/types/icon";
 
-const Icon = ({ id, className }: IconProps) => {
+function Icon({ id, className }: IconProps) {
   return (
     <svg
       className={className}
@@ -12,6 +12,6 @@ const Icon = ({ id, className }: IconProps) => {
       <use href={`/sprite.svg#${id}`} />
     </svg>
   );
-};
+}
 
 export default Icon;

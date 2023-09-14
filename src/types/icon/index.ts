@@ -1,4 +1,4 @@
-export type idType =
+export type IdType =
   | "EtutorLogo"
   | "YoutubeLogo"
   | "XSquare"
@@ -774,6 +774,6 @@ export type idType =
   | "ShoppingCartSimple";
 
 export interface IconProps {
-  id: idType;
+  id: IdType;
   className?: string;
 }
