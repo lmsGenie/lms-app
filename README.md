@@ -20,9 +20,15 @@ lmsGenie will have following features,
 - :open_book: Manage Courses : An instructor can upload, manage their courses, connect with entrolled students. 
 - :student: Manage Students : A student can enroll into courses, watch lectures, track learning history, talk to instructors.
 
-## Project Structure
-
 ## Want to contribute?
+Feel like contributing? That's awesome! We have a [contributing guide](https://github.com/lmsGenie/client/blob/main/.github/CONTRIBUTING.md) to help guide you. 
+
+In many ways you can contribute to this project.
+- Reporting Bugs
+- Implementing features
+- Code Review
+
+Want to discuss something? [Create a discussion](https://github.com/orgs/lmsGenie/discussions/new/choose)
 
 ## Attributions
 
