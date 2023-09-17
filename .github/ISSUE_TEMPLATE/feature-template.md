@@ -3,7 +3,8 @@ name: Feature Template
 about: For any new feature
 title: "[FEAT]: Short title"
 labels: enhancement
-assignees: ""
+assignees: ''
+
 ---
 
 ### Summary
