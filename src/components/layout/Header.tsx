@@ -35,7 +35,7 @@ const Header = () => {
   const currentRoute = usePathname();
 
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 z-10">
       {/* header top section */}
       <div className="hidden h-16 items-center justify-between bg-gray-900 px-4 text-gray-500 md:px-6 lg:flex lg:px-8">
         {/* nav links */}

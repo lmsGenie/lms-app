@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { categories } from "@/sampledata";
+import { categories, courseCardData } from "@/sampledata";
 
+import { CourseDataPartial } from "@/types/course";
 import { Button } from "@/components/ui/button";
+import CourseCard from "@/components/course/CourseCard";
 import Icon from "@/components/icon/Icon";
 
 import bannerImage from "../assets/hero.png";
@@ -31,7 +33,7 @@ export default function Home() {
       </section>
 
       {/* top categories section */}
-      <section className="my-4 px-10 md:my-6 md:px-16 lg:my-8 lg:px-20">
+      <section className="my-4 px-10 md:my-6 md:px-16 lg:my-14 lg:px-20">
         <h1 className="my-4 text-center text-lg font-semibold md:my-5 md:text-xl lg:my-6 lg:text-2xl">
           Browse Top Category
         </h1>
@@ -69,6 +71,17 @@ export default function Home() {
             Browse All
             <Icon id="ArrowRight" className="w-6 stroke-primary-500" />
           </Link>
+        </div>
+      </section>
+
+      {/* best selling courses */}
+      <section className="my-4 space-y-10 bg-gray-50 px-10 pb-60 pt-20 dark:bg-gray-800 md:my-6 md:px-16 lg:my-14 lg:px-20">
+        <h1 className="text-center text-2xl font-bold">Best selling courses</h1>
+        {/* container for course categories */}
+        <div className="flex cursor-pointer flex-wrap items-center justify-center gap-10">
+          {courseCardData.map((courseData: CourseDataPartial) => {
+            return <CourseCard key={courseData.id} data={courseData} />;
+          })}
         </div>
       </section>
     </main>
