@@ -1,11 +1,11 @@
 import { StaticImageData } from "next/image";
 
-import { idType } from "../icon";
+import { IdType } from "../icon";
 
 export interface ICategory {
   name: string;
   path: string;
-  iconId: idType;
+  iconId: IdType;
   totalCourses: number;
 }
 
