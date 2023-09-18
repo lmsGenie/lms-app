@@ -78,7 +78,7 @@ export default function Home() {
       <section className="my-4 space-y-10 bg-gray-50 px-10 pb-60 pt-20 dark:bg-gray-800 md:my-6 md:px-16 lg:my-14 lg:px-20">
         <h1 className="text-center text-2xl font-bold">Best selling courses</h1>
         {/* container for course categories */}
-        <div className="flex cursor-pointer flex-wrap items-center justify-center gap-10">
+        <div className="flex cursor-pointer flex-wrap items-center justify-center gap-10 lg:gap-5">
           {courseCardData.map((courseData: CourseDataPartial) => {
             return <CourseCard key={courseData.id} data={courseData} />;
           })}

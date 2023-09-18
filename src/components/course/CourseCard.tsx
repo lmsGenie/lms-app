@@ -19,7 +19,7 @@ const CourseCard = ({ data }: IProps) => {
   return (
     <HoverCard>
       <HoverCardTrigger>
-        <div className="w-80 bg-white shadow-sm transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md dark:bg-black">
+        <div className="w-72 bg-white shadow-sm transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md dark:bg-black lg:w-80">
           <Image
             className="w-full object-cover"
             src={data?.thumbnail!}
@@ -34,7 +34,7 @@ const CourseCard = ({ data }: IProps) => {
             <div className=" flex items-center gap-1 text-xs font-bold text-orange-500">
               {/* for currency symbol */}
               {data?.discountedPrice?.price ? (
-                <p className="flex items-center gap-1">
+                <div className="flex items-center gap-1">
                   {data?.discountedPrice?.currencySymbol +
                     data?.discountedPrice?.price}
                   <s className="self-end text-[9px] text-orange-400">
@@ -42,7 +42,7 @@ const CourseCard = ({ data }: IProps) => {
                       data?.listPrice?.currencySymbol + data?.listPrice?.price}
                   </s>
                   <p>{data?.discountPercentage}% OFF</p>
-                </p>
+                </div>
               ) : (
                 data?.discountedPrice?.currencySymbol! +
                 data?.discountedPrice?.price
@@ -51,7 +51,7 @@ const CourseCard = ({ data }: IProps) => {
           </div>
 
           {/* card body */}
-          <p className="my-2 line-clamp-2 px-3 text-sm font-semibold leading-tight">
+          <p className="my-2 line-clamp-1 px-3 text-sm font-semibold leading-tight">
             {data?.title}
           </p>
 
@@ -75,10 +75,11 @@ const CourseCard = ({ data }: IProps) => {
           </div>
         </div>
       </HoverCardTrigger>
-      <HoverCardContent className="w-80 p-0">
+
+      <HoverCardContent className="w-72 p-0 lg:w-80" side="right">
         <div className="space-y-2 py-2">
           <div className="space-y-2 px-2">
-            <p className="w-fit bg-success-100 py-[1px] text-[10px] font-semibold text-success-700">
+            <p className="w-fit bg-success-100 px-1 py-[1px] text-[10px] font-semibold text-success-700">
               {data?.category}
             </p>
             <h1 className="line-clamp-3 text-sm font-bold">{data?.title}</h1>
