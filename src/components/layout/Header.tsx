@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { categories } from "@/sampledata";
+import categories from "@/sampledata";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -27,10 +27,10 @@ import {
 } from "@/components/ui/sheet";
 
 import Icon from "../icon/Icon";
-import { ModeToggle } from "../toggle/ModeToggle";
+import ModeToggle from "../toggle/ModeToggle";
 import { Separator } from "../ui/separator";
 
-const Header = () => {
+function Header() {
   /* Get the current route */
   const currentRoute = usePathname();
 
@@ -117,12 +117,12 @@ const Header = () => {
             </SelectContent>
           </Select>
           <div>
-            <ModeToggle></ModeToggle>
+            <ModeToggle />
           </div>
         </div>
       </div>
 
-      {/* header bottom section*/}
+      {/* header bottom section */}
       <div className="flex h-20 items-center justify-between gap-4 bg-white px-3 shadow-sm dark:bg-gray-900 dark:shadow-gray-800 md:px-6 lg:px-8">
         {/* logo, browse, search */}
         <div className="flex items-center  gap-1 lg:gap-4">
@@ -144,8 +144,8 @@ const Header = () => {
                 <SelectValue placeholder="Browse" />
               </SelectTrigger>
               <SelectContent>
-                {categories.map((item, index) => (
-                  <SelectItem key={index} value={item.name}>
+                {categories.map((item) => (
+                  <SelectItem key={Date.now()} value={item.name}>
                     {item.name}
                   </SelectItem>
                 ))}
@@ -223,8 +223,8 @@ const Header = () => {
                 <div>
                   <div className="font-semibold">Browse</div>
                   <ul className="pl-4">
-                    {categories.map((item, index) => (
-                      <li className="my-2" key={index}>
+                    {categories.map((item: any) => (
+                      <li className="my-2" key={Date.now()}>
                         <Link href={item.path}>{item.name}</Link>
                       </li>
                     ))}
@@ -262,7 +262,7 @@ const Header = () => {
 
                 <div className="flex items-center justify-between">
                   <Button>Sign In</Button>
-                  <ModeToggle></ModeToggle>
+                  <ModeToggle />
                 </div>
               </div>
             </SheetContent>
@@ -271,6 +271,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;
