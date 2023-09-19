@@ -4,6 +4,14 @@ Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approacha
 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
+## Contributing to frontend?
+Please follow below recommended practices,
+- Use customized theme colors whenever possible. (tailwind.config.ts)
+- Use sprite icons whenever possible. [How to use Sprite Icons](https://github.com/orgs/lmsGenie/discussions/41#discussioncomment-7049981)
+- Define types at early stage of development.
+- Make sure UI is responsive.
+- Make sure of Dark Mode UI.
+
 ## Getting started
 
 To get an overview of the project, read the [README](README.md). Here are the steps to contribute,
@@ -14,33 +22,27 @@ You can either pick an [existing issue](https://github.com/lmsGenie/client/issue
 
 Note: Before making a new issue please [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments).
 
-### 2. Make changes
-
-#### 2.1. Fork the repository.
+### 2. Fork the repository
+There are two ways,
 
 - Using GitHub Desktop:
-
   - [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop.
   - Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!
 
 - Using the command line:
   - [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
 
-#### 2.2. Create a working branch and start with your changes!
-
-### 3. Commit your update
-
-Commit the changes once you are happy with them. Don't forget to self-review following things to speed up the review process:zap:.
-
-- Proper code formating with prettier.
-- Write explainable comments in code.
-- Write conventional commit messages (https://www.conventionalcommits.org/en/v1.0.0/).
-- Make sure the code is upto date with main branch.
-- Make sure that UI is rendered properly, without any unexpected error.
-- Remove any debug code, if present.
+### 3. Make Changes
+Create a working branch and start with your changes!
+```
+git checkout -b ui/feature-name     # creates a new branch "feature-name"
+git add .                           # add changes to stage
+git commit                          # Commit the changes once you are happy with them.
+git push                            # Push your changes to github
+```
+Note: Make sure your branch is upto date with main, otherwise run `git pull origin main`.
 
 ### 4. Pull Request
-
 When you're finished with the changes, create a pull request, also known as a PR.
 
 - Fill the PR template so that we can review your PR. This template helps reviewers understand your changes as well as the purpose of your pull request.
