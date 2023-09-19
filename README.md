@@ -33,15 +33,17 @@ pnpm run dev
 ## Project Structure
 1. Code files
 - `src/`: Contains main source code
-- `src/app`: Next.js app directory. [Next.js Routing](https://nextjs.org/docs/app/building-your-application/routing)
+- `src/app`: Next.js app directory. [Checkout Next.js Routing](https://nextjs.org/docs/app/building-your-application/routing)
+- `src/app/global.css`: Global CSS file.
 - `src/components`: Contains UI components.
+- `src/components/ui`: Contains shadcn/ui components. [Checkout Shadcn/ui Components](https://ui.shadcn.com/docs/components/accordion)
 - `src/types`: Contains Type definitions.
 - `src/sampledata`: Contains sample data.
 
 2. Assets files
 - `src/assets`: Contains project assets (images, icons, etc.)
-- `public/`: Next.js public directory.[Next.js Routing](https://nextjs.org/docs/app/building-your-application/routing)
-- `public/sprite`: Contains all svg icons. ([How to use Icons](https://github.com/orgs/lmsGenie/discussions/41#discussioncomment-7049981))
+- `public/`: Next.js public directory. [Checkout Next.js Routing](https://nextjs.org/docs/app/building-your-application/routing)
+- `public/sprite`: Contains all svg icons. [Checkout "How to use Sprite Icons"](https://github.com/orgs/lmsGenie/discussions/41#discussioncomment-7049981)
 
 3. Config files
 - `next.config.js`: Next.js config.
