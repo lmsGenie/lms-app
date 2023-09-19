@@ -1,17 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import bannerImage from "@/assets/hero.png";
 import categories from "@/sampledata";
 
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/icon/Icon";
 
-import bannerImage from "@/assets/hero.png";
-
 export default function Home() {
   return (
     <main>
       {/* hero section */}
-      <section className="mb-4 flex gap-6 bg-gray-50 py-5 pl-10 md:mb-6 md:gap-8 md:py-0 md:pl-16 lg:mb-8 lg:gap-10 lg:pl-20 dark:bg-gray-900">
+      <section className="mb-4 flex gap-6 bg-gray-50 py-5 pl-10 dark:bg-gray-900 md:mb-6 md:gap-8 md:py-0 md:pl-16 lg:mb-8 lg:gap-10 lg:pl-20">
         <div className="flex flex-col justify-center gap-3">
           <h1 className="text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl">
             Learn with expert anytime anywhere
