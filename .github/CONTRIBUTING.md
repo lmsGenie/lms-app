@@ -4,23 +4,17 @@ Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approacha
 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-## Contributing to frontend?
-Please follow below recommended practices,
-- Use customized theme colors whenever possible. (tailwind.config.ts)
-- Use sprite icons whenever possible. [How to use Sprite Icons](https://github.com/orgs/lmsGenie/discussions/41#discussioncomment-7049981)
-- Define types at early stage of development.
-- Make sure UI is responsive.
-- Make sure of Dark Mode UI.
-
 ## Getting started
 
 To get an overview of the project, read the [README](README.md). Here are the steps to contribute,
 
 ### 1. Create a new issue
 
-You can either pick an [existing issue](https://github.com/lmsGenie/client/issues), or if you spot a new feature, a bug, or an improvment, so you can open a new issue using a relevant [issue form](https://github.com/lmsGenie/client/issues/new/choose).
+You can either pick an existing issue, or if you spot a new feature, a bug, or an improvment, so you can open a new issue using a relevant [issue form](https://github.com/lmsGenie/client/issues/new/choose).
 
 Note: Before making a new issue please [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments).
+- [Frontend Issues](https://github.com/lmsGenie/client/issues)
+- [Backend Issues](https://github.com/lmsGenie/server/issues)
 
 ### 2. Fork the repository
 There are two ways,
@@ -58,3 +52,17 @@ Once you submit your PR, a team member will review your proposal. We may ask que
 ### 5. Your PR is merged!
 
 Congratulations :tada::tada: The lmsGenie team thanks you :sparkles:.
+
+## Guidelines for Contributing 
+Please follow below recommended practices,
+### For frontend.
+- Use customized theme colors whenever possible. (tailwind.config.ts)
+- Use sprite icons whenever possible. [How to use Sprite Icons](https://github.com/orgs/lmsGenie/discussions/41#discussioncomment-7049981)
+- Define types at early stage of development.
+- Make sure UI is responsive.
+- Make sure of Dark Mode UI.
+
+### For backend
+- Define types at early stage of development.
+- While defining any controller logic, try covering all edge cases.
+- Make sure request status codes are used correctly.
