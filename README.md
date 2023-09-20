@@ -47,6 +47,7 @@ pnpm run dev
 
 3. Config files
 - `next.config.js`: Next.js config.
+- `components.json`: Shadcn config.
 - `.eslintrc.json`: Eslint config.
 - `.eslintignore`: Esline ignore.
 - `commitlint.config.js`: Commitlint config.
