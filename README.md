@@ -57,6 +57,6 @@ pnpm run dev
 - `package.json`: Project dependencies.
 
 ## Want to contribute?
-Feel like contributing? That's awesome! We have a [contributing guide](https://github.com/lmsGenie/client/blob/main/.github/CONTRIBUTING.md) to help guide you. 
+Feel like contributing? That's awesome! We have a [contributing guide](.github/CONTRIBUTING.md) to help guide you. 
 
 Want to discuss something? [Create a discussion](https://github.com/orgs/lmsGenie/discussions/new/choose)
