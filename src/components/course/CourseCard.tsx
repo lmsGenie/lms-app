@@ -19,7 +19,7 @@ const CourseCard = ({ data }: IProps) => {
   return (
     <HoverCard>
       <HoverCardTrigger>
-        <div className="w-64 bg-white shadow-sm transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md dark:bg-black">
+        <div className="w-64 bg-white shadow-sm transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md dark:bg-black dark:bg-gray-800 dark:shadow-gray-100">
           <Image
             className="w-full object-cover"
             src={data?.thumbnail!}
@@ -67,7 +67,10 @@ const CourseCard = ({ data }: IProps) => {
       </HoverCardTrigger>
 
       {/* content on hover */}
-      <HoverCardContent className="w-80 p-0 2xl:w-[26.5rem]" side="right">
+      <HoverCardContent
+        className="w-80 p-0 dark:bg-gray-800 2xl:w-[26.5rem]"
+        side="right"
+      >
         <div className="space-y-2 py-2">
           {/* header */}
           <div className="space-y-3 px-2 2xl:space-y-5">
@@ -76,7 +79,7 @@ const CourseCard = ({ data }: IProps) => {
               <p className="w-fit bg-secondary-100 px-[6px] py-1 text-[10px] font-medium text-secondary-700">
                 {data?.category}
               </p>
-              <h1 className="line-clamp-3 text-sm font-medium text-gray-900 2xl:text-lg">
+              <h1 className="line-clamp-3 text-sm font-medium text-gray-900 dark:text-gray-50 2xl:text-lg">
                 {data?.title}
               </h1>
             </div>
@@ -91,17 +94,17 @@ const CourseCard = ({ data }: IProps) => {
                   className="h-12 w-12 rounded-full"
                 />
                 <div className="text-sm font-normal">
-                  <p className="text-gray-500">Course by</p>
-                  <h4 className="text-gray-900">Harvi</h4>
+                  <p className="text-gray-500 dark:text-gray-100">Course by</p>
+                  <h4 className="text-gray-900 dark:text-gray-50">Harvi</h4>
                 </div>
               </div>
 
               {/* for course rating */}
               <div className="flex items-center gap-1">
                 <Icon id="Star" className="w-5 fill-primary-500 stroke-none" />
-                <p className="flex items-center font-medium text-gray-900">
+                <p className="flex items-center font-medium text-gray-900 dark:text-gray-100">
                   {data?.averageRating}{" "}
-                  <span className="text-sm font-normal text-gray-600">
+                  <span className="text-sm font-normal text-gray-600 dark:text-gray-50">
                     ({data?.totalEnrollments})
                   </span>
                 </p>
@@ -114,7 +117,7 @@ const CourseCard = ({ data }: IProps) => {
             {/* course enrollment */}
             <div className="flex items-center gap-1">
               <Icon id="User" className="w-4 stroke-secondary-500 2xl:w-5" />
-              <p className="text-xs text-gray-700 2xl:text-sm">
+              <p className="text-xs text-gray-700 dark:text-gray-100 2xl:text-sm">
                 {data?.totalEnrollments}K <span>students</span>
               </p>
             </div>
@@ -122,13 +125,17 @@ const CourseCard = ({ data }: IProps) => {
             {/* course level */}
             <div className="flex items-center gap-1">
               <Icon id="ChartBar" className="w-4 stroke-primary-500 2xl:w-5" />
-              <p className="text-xs text-gray-700 2xl:text-sm">Beginner</p>
+              <p className="text-xs text-gray-700 dark:text-gray-100 2xl:text-sm">
+                Beginner
+              </p>
             </div>
 
             {/* cour content length */}
             <div className="flex items-center gap-1">
               <Icon id="Clock" className="w-4 stroke-success-500 2xl:w-5" />
-              <p className="text-xs text-gray-700 2xl:text-sm">6 hour</p>
+              <p className="text-xs text-gray-700 dark:text-gray-100 2xl:text-sm">
+                6 hour
+              </p>
             </div>
           </div>
 
@@ -137,10 +144,10 @@ const CourseCard = ({ data }: IProps) => {
             {/* for pricing */}
             <div className=" flex w-fit items-center gap-1">
               {data?.discountedPrice?.price ? (
-                <p className="flex items-center gap-1 text-lg text-gray-900 2xl:text-2xl">
+                <p className="flex items-center gap-1 text-lg text-gray-900 dark:text-gray-100 2xl:text-2xl">
                   {data?.discountedPrice?.currencySymbol +
                     data?.discountedPrice?.price}
-                  <s className="text-sm text-gray-500 2xl:text-base">
+                  <s className="text-sm text-gray-500 dark:text-gray-50 2xl:text-base">
                     {data?.listPrice &&
                       data?.listPrice?.currencySymbol + data?.listPrice?.price}
                   </s>
@@ -170,7 +177,7 @@ const CourseCard = ({ data }: IProps) => {
             <ul className="space-y-1">
               <li className="flex items-start gap-2">
                 <Icon id="Check" className="w-10 stroke-success-500 2xl:w-12" />
-                <p className="text-xs text-gray-600 2xl:text-sm">
+                <p className="text-xs text-gray-600 dark:text-gray-50 2xl:text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Reprehenderit veniam esse cum vitae qui veritatis ab neque
                   soluta, fuga enim?
@@ -178,7 +185,7 @@ const CourseCard = ({ data }: IProps) => {
               </li>
               <li className="flex items-start gap-2">
                 <Icon id="Check" className="w-10 stroke-success-500 2xl:w-12" />
-                <p className="text-xs text-gray-600 2xl:text-sm">
+                <p className="text-xs text-gray-600 dark:text-gray-100 2xl:text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Reprehenderit veniam esse cum vitae qui veritatis ab neque
                   soluta, fuga enim?

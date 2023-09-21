@@ -76,8 +76,8 @@ export default function Home() {
       </section>
 
       {/* best selling courses */}
-      <section className="my-4 bg-gray-50 p-2 md:my-6 md:p-10 md:px-16 lg:my-14 lg:px-20">
-        <h1 className="my-4 text-center text-lg font-semibold md:my-5 md:text-xl lg:my-6 lg:text-2xl">
+      <section className="my-4 bg-gray-50 p-2 dark:bg-gray-800 md:my-6 md:p-10 md:px-16 lg:my-14 lg:px-20">
+        <h1 className="my-4 text-center text-lg font-semibold dark:text-white md:my-5 md:text-xl lg:my-6 lg:text-2xl">
           Best selling courses
         </h1>
         {/* container for course categories */}
