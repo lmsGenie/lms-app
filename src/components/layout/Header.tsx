@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import categories from "@/sampledata";
+import { categories } from "@/sampledata";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -144,11 +144,12 @@ function Header() {
                 <SelectValue placeholder="Browse" />
               </SelectTrigger>
               <SelectContent>
-                {categories.map((item) => (
-                  <SelectItem key={Date.now()} value={item.name}>
-                    {item.name}
-                  </SelectItem>
-                ))}
+                {categories &&
+                  categories.map((item) => (
+                    <SelectItem key={Date.now()} value={item.name}>
+                      {item.name}
+                    </SelectItem>
+                  ))}
               </SelectContent>
             </Select>
           </div>
