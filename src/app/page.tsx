@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { categories, courseCardData } from "@/sampledata";
 import bannerImage from "@/assets/hero.png";
+import { categories, courseCardData } from "@/sampledata";
 
 import { CourseDataPartial } from "@/types/course";
 import { Button } from "@/components/ui/button";
@@ -41,8 +41,10 @@ export default function Home() {
             <Link
               href={item.path}
               key={Date.now() + index}
-              className={`${index > 3 ? "hidden" : "block"} 
-                sm:${index > 5 ? "hidden" : "block"} 
+              className={`${index > 3 ? "hidden" : "block"}
+                sm:${index > 5 ? "hidden" : "block"}
+                lg:${index > 11 ? "hidden" : "block"}`}
+            >
               <div className="flex gap-4 border border-gray-200 p-3 hover:shadow-lg dark:hover:shadow-md dark:hover:shadow-gray-600 md:p-4 lg:p-5">
                 <div className="flex h-14 w-14 items-center justify-center">
                   <Icon id={item.iconId} className="stroke-primary-500" />
