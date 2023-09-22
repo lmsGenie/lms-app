@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { categories, courseCardData } from "@/sampledata";
 import bannerImage from "@/assets/hero.png";
-import categories from "@/sampledata";
 
+import { CourseDataPartial } from "@/types/course";
 import { Button } from "@/components/ui/button";
+import CourseCard from "@/components/course/CourseCard";
 import Icon from "@/components/icon/Icon";
 
 export default function Home() {
@@ -30,7 +32,7 @@ export default function Home() {
       </section>
 
       {/* top categories section */}
-      <section className="my-4 px-10 md:my-6 md:px-16 lg:my-8 lg:px-20">
+      <section className="my-4 px-10 md:my-6 md:px-16 lg:my-14 lg:px-20">
         <h1 className="my-4 text-center text-lg font-semibold md:my-5 md:text-xl lg:my-6 lg:text-2xl">
           Browse Top Category
         </h1>
@@ -38,11 +40,9 @@ export default function Home() {
           {categories.map((item, index) => (
             <Link
               href={item.path}
-              key={Date.now()}
-              className={`${index > 3 ? "hidden" : "block"}
-                sm:${index > 5 ? "hidden" : "block"}
-                lg:${index > 11 ? "hidden" : "block"}`}
-            >
+              key={Date.now() + index}
+              className={`${index > 3 ? "hidden" : "block"} 
+                sm:${index > 5 ? "hidden" : "block"} 
               <div className="flex gap-4 border border-gray-200 p-3 hover:shadow-lg dark:hover:shadow-md dark:hover:shadow-gray-600 md:p-4 lg:p-5">
                 <div className="flex h-14 w-14 items-center justify-center">
                   <Icon id={item.iconId} className="stroke-primary-500" />
@@ -69,6 +69,19 @@ export default function Home() {
             Browse All
             <Icon id="ArrowRight" className="w-6 stroke-primary-500" />
           </Link>
+        </div>
+      </section>
+
+      {/* best selling courses */}
+      <section className="my-4 bg-gray-50 p-2 dark:bg-gray-800 md:my-6 md:p-10 md:px-16 lg:my-14 lg:px-20">
+        <h1 className="my-4 text-center text-lg font-semibold dark:text-white md:my-5 md:text-xl lg:my-6 lg:text-2xl">
+          Best selling courses
+        </h1>
+        {/* container for course categories */}
+        <div className="flex cursor-pointer flex-wrap items-center justify-center gap-5">
+          {courseCardData.map((courseData: CourseDataPartial) => {
+            return <CourseCard key={courseData.id} data={courseData} />;
+          })}
         </div>
       </section>
     </main>

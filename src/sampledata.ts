@@ -1,6 +1,8 @@
-import { ICategory } from "./types/course";
+import courseCardImage from "@/assets/courseCardImg.png";
 
-const categories: ICategory[] = [
+import { CourseDataPartial, ICategory } from "./types/course";
+
+export const categories: ICategory[] = [
   {
     name: "Label",
     path: "courses/label",
@@ -75,4 +77,136 @@ const categories: ICategory[] = [
   },
 ];
 
-export default categories;
+export const courseCardData: CourseDataPartial[] = [
+  {
+    id: "1",
+    category: ["BUSINESS"],
+    thumbnail: courseCardImage,
+    totalEnrollments: 500,
+    listPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 500,
+    },
+    discountedPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 400,
+    },
+    discountPercentage: 10,
+    averageRating: 5,
+    title:
+      "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
+  },
+  {
+    id: "1",
+    category: ["BUSINESS"],
+    thumbnail: courseCardImage,
+    totalEnrollments: 500,
+    listPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 500,
+    },
+    discountedPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 400,
+    },
+    discountPercentage: 10,
+    averageRating: 5,
+    title:
+      "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
+  },
+  {
+    id: "1",
+    category: ["BUSINESS"],
+    thumbnail: courseCardImage,
+    totalEnrollments: 500,
+    listPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 500,
+    },
+    discountedPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 400,
+    },
+    discountPercentage: 10,
+    averageRating: 5,
+    title:
+      "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
+  },
+  {
+    id: "1",
+    category: ["BUSINESS"],
+    thumbnail: courseCardImage,
+    totalEnrollments: 500,
+    listPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 500,
+    },
+    discountedPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 400,
+    },
+    discountPercentage: 10,
+    averageRating: 5,
+    title:
+      "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
+  },
+  {
+    id: "1",
+    category: ["BUSINESS"],
+    thumbnail: courseCardImage,
+    totalEnrollments: 500,
+    listPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 500,
+    },
+    discountedPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 400,
+    },
+    discountPercentage: 10,
+    averageRating: 5,
+    title: "Learn Python Programming Masterclass",
+  },
+  {
+    id: "1",
+    category: ["BUSINESS"],
+    thumbnail: courseCardImage,
+    totalEnrollments: 500,
+    listPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 500,
+    },
+    discountedPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 400,
+    },
+    discountPercentage: 10,
+    averageRating: 5,
+    title:
+      "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
+  },
+];
