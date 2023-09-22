@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import bannerImage from "@/assets/hero.png";
 import { categories, courseCardData } from "@/sampledata";
 
 import { CourseDataPartial } from "@/types/course";
@@ -8,19 +9,17 @@ import CourseCard from "@/components/course/CourseCard";
 import FeaturedCourseCard from "@/components/course/FeaturedCourseCard";
 import Icon from "@/components/icon/Icon";
 
-import bannerImage from "../assets/hero.png";
-
 export default function Home() {
   return (
     <main>
       {/* hero section */}
-      <section className="mb-4 flex gap-6 bg-gray-50 py-5 pl-10 md:mb-6 md:gap-8 md:py-0 md:pl-16 lg:mb-8 lg:gap-10 lg:pl-20">
+      <section className="mb-4 flex gap-6 bg-gray-50 py-5 pl-10 dark:bg-gray-900 md:mb-6 md:gap-8 md:py-0 md:pl-16 lg:mb-8 lg:gap-10 lg:pl-20">
         <div className="flex flex-col justify-center gap-3">
           <h1 className="text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl">
             Learn with expert anytime anywhere
           </h1>
           <p className="md:text-md text-sm lg:text-lg">
-            Our mision is to help people to find the best course online and
+            Our mission is to help people to find the best course online and
             learn with expert anytime, anywhere.
           </p>
           <Button className="w-fit">Create Account</Button>
@@ -43,8 +42,8 @@ export default function Home() {
             <Link
               href={item.path}
               key={Date.now() + index}
-              className={`${index > 3 ? "hidden" : "block"} 
-                sm:${index > 5 ? "hidden" : "block"} 
+              className={`${index > 3 ? "hidden" : "block"}
+                sm:${index > 5 ? "hidden" : "block"}
                 lg:${index > 11 ? "hidden" : "block"}`}
             >
               <div className="flex gap-4 border border-gray-200 p-3 hover:shadow-lg dark:hover:shadow-md dark:hover:shadow-gray-600 md:p-4 lg:p-5">
