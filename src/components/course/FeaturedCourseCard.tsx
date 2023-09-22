@@ -26,9 +26,9 @@ const FeaturedCourseCard = ({ data }: IProps) => {
 
           {data?.discountedPrice ? (
             data?.listPrice && (
-              <p className="text-[16px] text-gray-900">
+              <p className="text-[16px] text-gray-900 dark:text-white">
                 {data?.listPrice?.currencySymbol} {data?.listPrice?.price}
-                <s className="ml-1 text-sm text-gray-400">
+                <s className="ml-1 text-sm text-gray-400 dark:text-gray-50">
                   {data?.discountedPrice?.currencySymbol}
                   {data?.discountedPrice?.price}
                 </s>
@@ -41,7 +41,7 @@ const FeaturedCourseCard = ({ data }: IProps) => {
           )}
         </div>
 
-        <h1 className="line-clamp-1 px-3 text-sm font-medium text-gray-900 md:text-base">
+        <h1 className="line-clamp-1 px-3 text-sm font-medium text-gray-900 dark:text-white md:text-base">
           {data?.title}
         </h1>
 
@@ -50,7 +50,9 @@ const FeaturedCourseCard = ({ data }: IProps) => {
           {/* for metor */}
           <div className="flex h-7 w-7 items-center rounded-full">
             <Image src={mentorImage} alt="mentor" />
-            <p className="ml-2 text-xs text-gray-700 md:text-sm">Harvi</p>
+            <p className="ml-2 text-xs text-gray-700 dark:text-white md:text-sm">
+              Harvi
+            </p>
           </div>
 
           {/* for course rating */}

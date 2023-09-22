@@ -80,7 +80,7 @@ export default function Home() {
         <h1 className="my-4 text-center text-lg font-semibold dark:text-white md:my-5 md:text-xl lg:my-6 lg:text-2xl">
           Best selling courses
         </h1>
-        {/* container for course categories */}
+        {/* container for courses card */}
         <div className="flex cursor-pointer flex-wrap items-center justify-center gap-5 pb-48">
           {courseCardData.map((courseData: CourseDataPartial) => {
             return <CourseCard key={courseData.id} data={courseData} />;
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* for feature courses section */}
-      <section className="relative -top-40 mx-2 space-y-5 border-2 border-gray-100 bg-white p-2 md:mx-16 md:p-5 lg:mx-20 lg:p-10">
+      <section className="relative -top-40 mx-2 space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-16 md:p-5 lg:mx-20 lg:p-10">
         {/* header part */}
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <h1 className=" text-lg font-semibold dark:text-white md:text-xl lg:text-2xl">
@@ -107,6 +107,28 @@ export default function Home() {
             return <FeaturedCourseCard key={courseData.id} data={courseData} />;
           })}
         </div>
+      </section>
+
+      {/* recently added courses */}
+      <section className="relative -top-28 flex flex-col items-center p-2 dark:bg-gray-800 md:p-10 md:px-24 md:pb-5 lg:px-40">
+        <h1 className="mb-4 text-center text-lg font-semibold dark:text-white md:mb-5 md:text-xl lg:mb-6 lg:text-2xl">
+          Recently added courses
+        </h1>
+        {/* container for courses card */}
+        <div className="flex cursor-pointer flex-wrap items-center justify-center gap-5">
+          {courseCardData.map((courseData: CourseDataPartial) => {
+            return <CourseCard key={courseData.id} data={courseData} />;
+          })}
+        </div>
+
+        {/* button for explore more */}
+        <Button
+          variant={"primarylight"}
+          type="button"
+          className="mx-auto mt-10"
+        >
+          Browse All Course <Icon id="ArrowRight" className="ml-2 w-5" />
+        </Button>
       </section>
     </main>
   );
