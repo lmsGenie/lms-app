@@ -5,6 +5,7 @@ import { categories, courseCardData } from "@/sampledata";
 import { CourseDataPartial } from "@/types/course";
 import { Button } from "@/components/ui/button";
 import CourseCard from "@/components/course/CourseCard";
+import FeaturedCourseCard from "@/components/course/FeaturedCourseCard";
 import Icon from "@/components/icon/Icon";
 
 import bannerImage from "../assets/hero.png";
@@ -76,14 +77,35 @@ export default function Home() {
       </section>
 
       {/* best selling courses */}
-      <section className="my-4 bg-gray-50 p-2 dark:bg-gray-800 md:my-6 md:p-10 md:px-16 lg:my-14 lg:px-20">
+      <section className="relative my-4 bg-gray-50 p-2 dark:bg-gray-800 md:mt-6 md:p-10 md:px-24 lg:mt-14 lg:px-40">
         <h1 className="my-4 text-center text-lg font-semibold dark:text-white md:my-5 md:text-xl lg:my-6 lg:text-2xl">
           Best selling courses
         </h1>
         {/* container for course categories */}
-        <div className="flex cursor-pointer flex-wrap items-center justify-center gap-5">
+        <div className="flex cursor-pointer flex-wrap items-center justify-center gap-5 pb-48">
           {courseCardData.map((courseData: CourseDataPartial) => {
             return <CourseCard key={courseData.id} data={courseData} />;
+          })}
+        </div>
+      </section>
+
+      {/* for feature courses section */}
+      <section className="relative -top-40 mx-2 space-y-5 border-2 border-gray-100 bg-white p-2 md:mx-16 md:p-5 lg:mx-20 lg:p-10">
+        {/* header part */}
+        <div className="flex flex-col items-center justify-between lg:flex-row">
+          <h1 className=" text-lg font-semibold dark:text-white md:text-xl lg:text-2xl">
+            Our feature courses
+          </h1>
+          <p className="w-full text-center text-sm md:w-96 lg:text-left">
+            we are here to provide you the best quality content from best
+            mentors across the whole galaxy.
+          </p>
+        </div>
+
+        {/* container for featured courses card */}
+        <div className="flex flex-col flex-wrap items-center justify-center gap-5 md:flex-row">
+          {courseCardData.map((courseData: CourseDataPartial) => {
+            return <FeaturedCourseCard key={courseData.id} data={courseData} />;
           })}
         </div>
       </section>
