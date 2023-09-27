@@ -46,7 +46,7 @@ pnpm run dev
 
 - `src/`: Contains main source code
 - `src/app`: Next.js app directory. [Checkout Next.js Routing](https://nextjs.org/docs/app/building-your-application/routing)
-- `src/app/global.css`: Global CSS file.
+- `src/app/globals.css`: Global CSS file.
 - `src/components`: Contains UI components.
 - `src/components/ui`: Contains shadcn/ui components. [Checkout Shadcn/ui Components](https://ui.shadcn.com/docs/components/accordion)
 - `src/types`: Contains Type definitions.
@@ -57,7 +57,6 @@ pnpm run dev
 - `src/assets`: Contains project assets (images, icons, etc.)
 - `public/`: Next.js public directory. [Checkout Next.js Routing](https://nextjs.org/docs/app/building-your-application/routing)
 - `public/sprite`: Contains all svg icons. [Checkout "How to use Sprite Icons"](https://github.com/orgs/lmsGenie/discussions/41#discussioncomment-7049981)
-- `globals.css`: Contains CSS rules that can be used anywhere in project.
 
 3. Config files
 
