@@ -1,5 +1,3 @@
-import { StaticImageData } from "next/image";
-
 import { IdType } from "../icon";
 
 export interface ICategory {
@@ -9,7 +7,7 @@ export interface ICategory {
   totalCourses: number;
 }
 
-export interface ICourseData {
+export interface ICourse {
   id: string;
   title: string;
   subTitle: string;
@@ -18,15 +16,15 @@ export interface ICourseData {
   slug: string;
   language: string;
   topic: string;
-  thumbnail: string | StaticImageData;
-  trailer: string;
+  thumbnail: string;
+  trailer?: string;
   description: string;
   courseOutline: string[];
   targetAudience: string[];
   preRequisites: string[];
-  welcomeMessage: string;
-  completionMessage: string;
-  completionRate: number;
+  welcomeMessage?: string;
+  completionMessage?: string;
+  completionRate?: number;
   averageRating: number;
   sections: string[];
   tools: string[];
@@ -37,7 +35,7 @@ export interface ICourseData {
     currencyCode: string;
     currencySymbol: string;
   };
-  discountedPrice: {
+  discountedPrice?: {
     price: number;
     currencyName: string;
     currencyCode: string;
@@ -45,7 +43,8 @@ export interface ICourseData {
   };
   discountPercentage: number;
   instructors: string[];
-  totalEnrollments: number;
-  reviews: string[];
+  totalEnrollments?: number;
+  reviews?: string[];
 }
-export type CourseDataPartial = Partial<ICourseData>;
+
+export type ICourseCard = Partial<ICourse>;

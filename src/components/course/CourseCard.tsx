@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mentorImage from "@/assets/mentorImage.png";
 
-import { CourseDataPartial } from "@/types/course";
+import { ICourseCard } from "@/types/course";
 import {
   HoverCard,
   HoverCardContent,
@@ -12,7 +12,7 @@ import Icon from "../icon/Icon";
 import { Button } from "../ui/button";
 
 interface IProps {
-  data: CourseDataPartial;
+  data: ICourseCard;
 }
 
 const CourseCard = ({ data }: IProps) => {
@@ -24,6 +24,8 @@ const CourseCard = ({ data }: IProps) => {
             className="w-full object-cover"
             src={data?.thumbnail!}
             alt="course card image"
+            width={200}
+            height={200}
           />
           {/* card header */}
           <div className="mt-2 flex items-center justify-between px-[14px]">
