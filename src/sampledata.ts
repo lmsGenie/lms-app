@@ -1,6 +1,4 @@
-import courseCardImage from "@/assets/courseCardImg.png";
-
-import { CourseDataPartial, ICategory } from "./types/course";
+import { ICategory, ICourseCard } from "./types/course";
 
 export const categories: ICategory[] = [
   {
@@ -77,11 +75,56 @@ export const categories: ICategory[] = [
   },
 ];
 
-export const courseCardData: CourseDataPartial[] = [
+export const courseCardData: ICourseCard[] = [
   {
     id: "1",
+    category: ["FINANCE AND ACCOUNTING"],
+    thumbnail:
+      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862207/lmsGenie%20assets/course/course6_tclpvl.jpg",
+    totalEnrollments: 500,
+    listPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 500,
+    },
+    discountedPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 400,
+    },
+    discountPercentage: 10,
+    averageRating: 5,
+    title: "The Complete Personal Finance Course: Save, Protect, Make More",
+  },
+  {
+    id: "2",
+    category: ["LIFE STYLE"],
+    thumbnail:
+      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862205/lmsGenie%20assets/course/course1_p9jghe.jpg",
+    totalEnrollments: 500,
+    listPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 500,
+    },
+    discountedPrice: {
+      currencyCode: "USD",
+      currencyName: "us",
+      currencySymbol: "$",
+      price: 400,
+    },
+    discountPercentage: 10,
+    averageRating: 5,
+    title: "Transformation Life Coach Certification (Accredited)",
+  },
+  {
+    id: "3",
     category: ["BUSINESS"],
-    thumbnail: courseCardImage,
+    thumbnail:
+      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862198/lmsGenie%20assets/course/course4_zzetiz.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -101,9 +144,10 @@ export const courseCardData: CourseDataPartial[] = [
       "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
   },
   {
-    id: "1",
+    id: "4",
     category: ["BUSINESS"],
-    thumbnail: courseCardImage,
+    thumbnail:
+      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862197/lmsGenie%20assets/course/course2_zh4bxx.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -119,13 +163,13 @@ export const courseCardData: CourseDataPartial[] = [
     },
     discountPercentage: 10,
     averageRating: 5,
-    title:
-      "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
+    title: "Business Model Innovation: Differentiate & Grow Your Company",
   },
   {
-    id: "1",
-    category: ["BUSINESS"],
-    thumbnail: courseCardImage,
+    id: "5",
+    category: ["MUSIC"],
+    thumbnail:
+      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862197/lmsGenie%20assets/course/course10_dwwbdy.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -141,13 +185,13 @@ export const courseCardData: CourseDataPartial[] = [
     },
     discountPercentage: 10,
     averageRating: 5,
-    title:
-      "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
+    title: "Pianoforall - Incredible New Way To Learn Piano & Keyboard",
   },
   {
-    id: "1",
+    id: "6",
     category: ["BUSINESS"],
-    thumbnail: courseCardImage,
+    thumbnail:
+      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862197/lmsGenie%20assets/course/course8_usweyy.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -163,13 +207,13 @@ export const courseCardData: CourseDataPartial[] = [
     },
     discountPercentage: 10,
     averageRating: 5,
-    title:
-      "Learn Python Programming Masterclass dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd dehudheudheuhdeudhdddddddddddddddddddddddd",
+    title: "Business Model Innovation: Differentiate & Grow Your Company",
   },
   {
-    id: "1",
-    category: ["BUSINESS"],
-    thumbnail: courseCardImage,
+    id: "7",
+    category: ["MUSIC"],
+    thumbnail:
+      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862194/lmsGenie%20assets/course/course9_o73qqh.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -185,12 +229,13 @@ export const courseCardData: CourseDataPartial[] = [
     },
     discountPercentage: 10,
     averageRating: 5,
-    title: "Learn Python Programming Masterclass",
+    title: "Pianoforall - Incredible New Way To Learn Piano & Keyboard",
   },
   {
-    id: "1",
-    category: ["BUSINESS"],
-    thumbnail: courseCardImage,
+    id: "8",
+    category: ["IT & SOFTWARE"],
+    thumbnail:
+      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862193/lmsGenie%20assets/course/course3_ywumwu.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",

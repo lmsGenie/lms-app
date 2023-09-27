@@ -221,7 +221,10 @@ function Footer() {
           <li className="text-md mb-3 text-white lg:mb-4 lg:text-lg">
             DOWNLOAD OUR APP
           </li>
-          <Link href="/" className=" group grid w-fit grid-cols-[50px_100px] gap-x-2 bg-gray-800/40 p-3 hover:bg-primary-500 xl:w-full ">
+          <Link
+            href="/"
+            className=" group grid w-fit grid-cols-[50px_100px] gap-x-2 bg-gray-800/40 p-3 hover:bg-primary-500 xl:w-full "
+          >
             <div className="row-start-1 row-end-3 self-center justify-self-center">
               <Icon id="AppleLogo" className="h-9 w-9 fill-white stroke-none" />
             </div>
@@ -229,7 +232,10 @@ function Footer() {
             <div className="text-lg text-white lg:text-xl">App Store</div>
           </Link>
 
-          <Link href="/" className=" group mt-4 grid w-fit grid-cols-[50px_100px] gap-x-2 bg-gray-800/40 p-3 hover:bg-primary-500 xl:w-full">
+          <Link
+            href="/"
+            className=" group mt-4 grid w-fit grid-cols-[50px_100px] gap-x-2 bg-gray-800/40 p-3 hover:bg-primary-500 xl:w-full"
+          >
             <div className="row-start-1 row-end-3 self-center justify-self-center">
               <Icon id="GooglePlayLogo" className="h-9 w-9 fill-white" />
             </div>
