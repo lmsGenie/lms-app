@@ -11,16 +11,16 @@ interface IProps {
 
 const FeaturedCourseCard = ({ data }: IProps) => {
   return (
-    <div className="flex w-fit cursor-pointer flex-col border-[1.5px] border-gray-100 transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md lg:flex-row">
+    <div className="flex cursor-pointer flex-col border-[1.5px] border-gray-100 transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md lg:flex-row">
       <Image
         src={data?.thumbnail!}
         alt="thumbnail"
-        className="w-full object-cover lg:w-40"
+        className="w-full object-cover lg:w-[30%]"
       />
-      <div className="w-[17rem] space-y-1 lg:w-80">
+      <div className="w-full space-y-1 lg:w-[70%]">
         {/* for right side header */}
         <div className="mt-3 flex items-center justify-between px-3">
-          <label className="bg-primary-100 px-[10px] py-[4px] text-[10px] font-semibold text-success-700">
+          <label className="bg-primary-100 px-3 py-1 text-xs font-semibold text-success-700">
             {data?.category?.[0]}
           </label>
 
@@ -41,7 +41,7 @@ const FeaturedCourseCard = ({ data }: IProps) => {
           )}
         </div>
 
-        <h1 className="line-clamp-1 px-3 text-sm font-medium text-gray-900 dark:text-white md:text-base">
+        <h1 className="line-clamp-1 px-3 text-sm font-medium text-gray-900 dark:text-white">
           {data?.title}
         </h1>
 
