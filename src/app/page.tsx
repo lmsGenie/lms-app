@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import bannerImage from "@/assets/hero.png";
-import { categories, courseCardData } from "@/sampledata";
+import { categories, courses } from "@/sampledata";
 
-import { CourseDataPartial } from "@/types/course";
+import { ICoursePartial } from "@/types/course";
 import { Button } from "@/components/ui/button";
 import CourseCard from "@/components/course/CourseCard";
 import Icon from "@/components/icon/Icon";
@@ -81,7 +81,7 @@ export default function Home() {
         </h1>
         {/* container for course categories */}
         <div className="flex cursor-pointer flex-wrap items-center justify-center gap-5">
-          {courseCardData.map((courseData: CourseDataPartial) => {
+          {courses.map((courseData: ICoursePartial) => {
             return <CourseCard key={courseData.id} data={courseData} />;
           })}
         </div>

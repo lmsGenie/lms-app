@@ -1,4 +1,5 @@
 import { IdType } from "../icon";
+import { IUserPartial } from "../user";
 
 export interface ICategory {
   name: string;
@@ -42,9 +43,9 @@ export interface ICourse {
     currencySymbol: string;
   };
   discountPercentage: number;
-  instructors: string[];
+  instructors: IUserPartial[];
   totalEnrollments?: number;
   reviews?: string[];
 }
 
-export type ICourseCard = Partial<ICourse>;
+export type ICoursePartial = Partial<ICourse>;
