@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { DEFAULT_AVATAR } from "@/utils/contants";
 
 import { ICoursePartial } from "@/types/course";
 
@@ -47,12 +48,12 @@ const FeaturedCourseCard = ({ data }: IProps) => {
         </h1>
 
         {/* for mentor and course review */}
-        <div className="flex items-center justify-between px-3">
+        <div className="flex items-center justify-between px-3 py-2">
           {/* for metor */}
           <div className="flex items-center">
             <Image
               className="h-7 w-7 rounded-full object-cover"
-              src={data.instructors![0].profilePicture!}
+              src={data.instructors?.[0].profilePicture || DEFAULT_AVATAR}
               alt="mentor image"
               width={200}
               height={200}

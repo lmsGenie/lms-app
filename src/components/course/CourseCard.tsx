@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { DEFAULT_AVATAR } from "@/utils/contants";
 
 import { ICoursePartial } from "@/types/course";
 import {
@@ -91,7 +92,7 @@ const CourseCard = ({ data }: IProps) => {
               <div className="flex items-center gap-2">
                 <Image
                   className="h-12 w-12 rounded-full object-cover"
-                  src={data.instructors![0].profilePicture!}
+                  src={data.instructors?.[0].profilePicture || DEFAULT_AVATAR}
                   alt="mentor image"
                   width={200}
                   height={200}
