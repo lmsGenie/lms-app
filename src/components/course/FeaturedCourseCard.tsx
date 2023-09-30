@@ -1,12 +1,11 @@
 import Image from "next/image";
-import mentorImage from "@/assets/mentorImage.png";
 
-import { CourseDataPartial } from "@/types/course";
+import { ICoursePartial } from "@/types/course";
 
 import Icon from "../icon/Icon";
 
 interface IProps {
-  data: CourseDataPartial;
+  data: ICoursePartial;
 }
 
 const FeaturedCourseCard = ({ data }: IProps) => {
@@ -16,6 +15,8 @@ const FeaturedCourseCard = ({ data }: IProps) => {
         src={data?.thumbnail!}
         alt="thumbnail"
         className="w-full object-cover lg:w-[30%]"
+        width={200}
+        height={200}
       />
       <div className="w-full space-y-1 lg:w-[70%]">
         {/* for right side header */}
@@ -48,10 +49,16 @@ const FeaturedCourseCard = ({ data }: IProps) => {
         {/* for mentor and course review */}
         <div className="flex items-center justify-between px-3">
           {/* for metor */}
-          <div className="flex h-7 w-7 items-center rounded-full">
-            <Image src={mentorImage} alt="mentor" />
+          <div className="flex items-center">
+            <Image
+              className="h-7 w-7 rounded-full object-cover"
+              src={data.instructors![0].profilePicture!}
+              alt="mentor image"
+              width={200}
+              height={200}
+            />
             <p className="ml-2 text-xs text-gray-700 dark:text-white md:text-sm">
-              Harvi
+              {data.instructors![0].firstName}
             </p>
           </div>
 
