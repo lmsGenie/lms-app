@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import bannerImage from "@/assets/hero.png";
-import { categories, courseCardData } from "@/sampledata";
+import { categories, courses } from "@/sampledata";
 
-import { CourseDataPartial } from "@/types/course";
+import { ICoursePartial } from "@/types/course";
 import { Button } from "@/components/ui/button";
 import CourseCard from "@/components/course/CourseCard";
 import FeaturedCourseCard from "@/components/course/FeaturedCourseCard";
@@ -76,20 +76,20 @@ export default function Home() {
       </section>
 
       {/* best selling courses */}
-      <section className="relative my-4 bg-gray-50 p-2 px-10 dark:bg-gray-800 md:my-6 md:mt-6 md:p-10 md:px-16 lg:my-14 lg:px-20">
+      <section className="relative my-4 bg-gray-50 p-2 px-10 dark:bg-gray-900 md:my-6 md:px-16 lg:my-14 lg:px-20">
         <h1 className="my-4 text-center text-lg font-semibold dark:text-white md:my-5 md:text-xl lg:my-6 lg:text-2xl">
           Best selling courses
         </h1>
         {/* container for courses card */}
-        <div className="grid cursor-pointer grid-cols-1 justify-items-center gap-5 pb-40 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {courseCardData.map((courseData: CourseDataPartial) => {
+        <div className="grid cursor-pointer grid-cols-1 gap-5 pb-40 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {courses.map((courseData: ICoursePartial) => {
             return <CourseCard key={courseData.id} data={courseData} />;
           })}
         </div>
       </section>
 
       {/* for feature courses section */}
-      <section className="relative -top-40 mx-2 space-y-5 border-2 border-gray-100 bg-white  p-2 dark:bg-gray-800  md:mx-11 md:p-5 lg:mx-10 lg:p-10">
+      <section className="relative -top-40 mx-2 space-y-5 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
         {/* header part */}
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <h1 className=" text-lg font-semibold dark:text-white md:text-xl lg:text-2xl">
@@ -103,32 +103,34 @@ export default function Home() {
 
         {/* container for featured courses card */}
         <div className="grid grid-cols-1 gap-5  md:grid-cols-2">
-          {courseCardData.map((courseData: CourseDataPartial) => {
+          {courses.map((courseData: ICoursePartial) => {
             return <FeaturedCourseCard key={courseData.id} data={courseData} />;
           })}
         </div>
       </section>
 
       {/* recently added courses */}
-      <section className="relative -top-28 flex flex-col items-center p-2 dark:bg-gray-800 md:p-10 md:px-16 md:pb-5 lg:px-20">
+      <section className="relative -top-28 my-4 px-10 dark:bg-gray-900 md:my-6 md:px-16 lg:my-14 lg:px-20">
         <h1 className="mb-4 text-center text-lg font-semibold dark:text-white md:mb-5 md:text-xl lg:mb-6 lg:text-2xl">
           Recently added courses
         </h1>
         {/* container for courses card */}
-        <div className="grid cursor-pointer grid-cols-1 justify-items-center gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {courseCardData.map((courseData: CourseDataPartial) => {
+        <div className="grid cursor-pointer grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {courses.map((courseData: ICoursePartial) => {
             return <CourseCard key={courseData.id} data={courseData} />;
           })}
         </div>
 
         {/* button for explore more */}
-        <Button
-          variant={"primarylight"}
-          type="button"
-          className="mx-auto mt-10"
-        >
-          Browse All Course <Icon id="ArrowRight" className="ml-2 w-5" />
-        </Button>
+        <div className="text-center">
+          <Button
+            variant={"primarylight"}
+            type="button"
+            className="mx-auto mt-10"
+          >
+            Browse All Course <Icon id="ArrowRight" className="ml-2 w-5" />
+          </Button>
+        </div>
       </section>
     </main>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import mentorImage from "@/assets/mentorImage.png";
+import { DEFAULT_AVATAR } from "@/utils/contants";
 
-import { ICourseCard } from "@/types/course";
+import { ICoursePartial } from "@/types/course";
 import {
   HoverCard,
   HoverCardContent,
@@ -12,7 +12,7 @@ import Icon from "../icon/Icon";
 import { Button } from "../ui/button";
 
 interface IProps {
-  data: ICourseCard;
+  data: ICoursePartial;
 }
 
 const CourseCard = ({ data }: IProps) => {
@@ -91,13 +91,17 @@ const CourseCard = ({ data }: IProps) => {
               {/* for mentor details */}
               <div className="flex items-center gap-2">
                 <Image
-                  src={mentorImage}
+                  className="h-12 w-12 rounded-full object-cover"
+                  src={data.instructors?.[0].profilePicture || DEFAULT_AVATAR}
                   alt="mentor image"
-                  className="h-12 w-12 rounded-full"
+                  width={200}
+                  height={200}
                 />
                 <div className="text-sm font-normal">
                   <p className="text-gray-500 dark:text-gray-100">Course by</p>
-                  <h4 className="text-gray-900 dark:text-gray-50">Harvi</h4>
+                  <h4 className="text-gray-900 dark:text-gray-50">
+                    {data.instructors![0].firstName}
+                  </h4>
                 </div>
               </div>
 
