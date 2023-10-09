@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import becomeInstructor from "@/assets/becomeInstructor.png";
 import bannerImage from "@/assets/hero.png";
+import topMentor from "@/assets/topMentor.png";
 import { categories, courses } from "@/sampledata";
 
 import { ICoursePartial } from "@/types/course";
@@ -90,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* for feature courses section */}
-      <section className="relative -top-40 mx-2 space-y-5 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
+      <section className="relative -top-40 mx-2 space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
         {/* header part */}
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <h1 className=" text-lg font-semibold dark:text-white md:text-xl lg:text-2xl">
@@ -194,6 +195,44 @@ export default function Home() {
               <p className="text-sm font-medium">Start teaching and earning</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* top instructor of the month */}
+      <section className="relative -top-40 mx-2 space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
+        <h1 className="text-center text-lg font-semibold dark:text-white md:text-xl lg:text-2xl">
+          Top instructor of the month
+        </h1>
+
+        {/* container for top mentors */}
+        <div className="grid grid-cols-5 gap-5">
+          {Array.from({ length: 5 }).map((_, index) => {
+            return (
+              <div key={index} className="w-48 border-[1.5px] border-gray-100">
+                <Image src={topMentor} alt="mentor" />
+                <div className="p-2">
+                  <h2 className="text-center font-medium text-gray-900">
+                    Harvi
+                  </h2>
+                  <p className="text-center text-sm text-gray-500">
+                    SDE3 @ Google
+                  </p>
+                </div>
+                <div className="flex items-center justify-between border-t-[1.5px] border-gray-100 px-2 py-1">
+                  <div className="flex items-center gap-1 text-sm">
+                    <Icon
+                      id="Star"
+                      className="w-4 fill-primary-500 stroke-none"
+                    />{" "}
+                    <p>4.9</p>
+                  </div>
+                  <p className="text-sm  text-gray-900">
+                    854 <span className="text-gray-500">students</span>
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </main>
