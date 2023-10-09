@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import becomeInstructor from "@/assets/becomeInstructor.png";
 import bannerImage from "@/assets/hero.png";
 import { categories, courses } from "@/sampledata";
 
@@ -130,6 +131,69 @@ export default function Home() {
           >
             Browse All Course <Icon id="ArrowRight" className="ml-2 w-5" />
           </Button>
+        </div>
+      </section>
+
+      {/* become an instructor */}
+      <section className="relative my-4 grid grid-cols-2 gap-10 bg-gray-50 p-10 pb-40 dark:bg-gray-900 md:my-6 md:p-16 md:pb-40 lg:my-14 lg:p-20 lg:pb-40">
+        <div className="relative space-y-3 bg-gradient-to-r from-orange-500 to-orange-400 p-8">
+          <h1 className="text-2xl font-semibold text-white">
+            Become an instructor
+          </h1>
+          <p className="w-64 text-sm text-white">
+            Instructors from around the world teach millions of students on LMS
+            Ginie. We provide the tools and skills to teach what you love.
+          </p>
+          <Button
+            variant={"primarylight"}
+            type="button"
+            className="bg-white hover:bg-gray-50"
+            size={"sm"}
+          >
+            Start Teaching <Icon id="ArrowRight" className="ml-2 w-5" />
+          </Button>
+          <Image
+            src={becomeInstructor}
+            alt="instructor"
+            className="absolute bottom-0 right-10 w-44"
+          />
+        </div>
+
+        {/* for more details */}
+        <div className="flex flex-col items-center justify-center space-y-6 bg-white p-8">
+          <h1 className="self-start text-2xl font-semibold">
+            Your teaching & earning steps
+          </h1>
+          {/* for steps */}
+          <div className="grid grid-cols-2 gap-5">
+            <div className="flex items-center gap-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 font-bold text-blue-500">
+                1
+              </div>
+              <p className="text-sm font-medium">Apply to become instructor</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-100 font-bold text-orange-500">
+                2
+              </div>
+              <p className="text-sm font-medium">Build & edit your profile</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-100 font-bold text-purple-500">
+                3
+              </div>
+              <p className="text-sm font-medium">Create your new course</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-green-100 font-bold text-green-500">
+                4
+              </div>
+              <p className="text-sm font-medium">Start teaching and earning</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
