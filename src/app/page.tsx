@@ -112,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* recently added courses */}
-      <section className="relative -top-28 my-4 px-10 dark:bg-gray-900 md:my-6 md:px-16 lg:my-14 lg:px-20">
+      <section className="relative -top-28 my-4 px-10 dark:bg-gray-900 md:my-6 md:px-16 lg:mt-14 lg:px-20">
         <h1 className="mb-4 text-center text-lg font-semibold dark:text-white md:mb-5 md:text-xl lg:mb-6 lg:text-2xl">
           Recently added courses
         </h1>
@@ -136,37 +136,42 @@ export default function Home() {
       </section>
 
       {/* become an instructor */}
-      <section className="relative my-4 grid grid-cols-2 gap-10 bg-gray-50 p-10 pb-40 dark:bg-gray-900 md:my-6 md:p-16 md:pb-40 lg:my-14 lg:p-20 lg:pb-40">
-        <div className="relative space-y-3 bg-gradient-to-r from-orange-500 to-orange-400 p-8">
-          <h1 className="text-2xl font-semibold text-white">
+      <section className="relative my-4 grid grid-cols-1 gap-10 bg-gray-50 p-2 pb-40 dark:bg-gray-800 md:my-6 md:grid-cols-2 md:p-12 md:pb-40 lg:my-14 lg:p-20 lg:pb-40">
+        <div className="relative space-y-3 bg-gradient-to-r from-orange-500 to-orange-400 p-2 lg:p-4 xl:p-8">
+          <h1 className="text-center text-2xl font-semibold text-white lg:text-left">
             Become an instructor
           </h1>
-          <p className="w-64 text-sm text-white">
-            Instructors from around the world teach millions of students on LMS
-            Ginie. We provide the tools and skills to teach what you love.
-          </p>
-          <Button
-            variant={"primarylight"}
-            type="button"
-            className="bg-white hover:bg-gray-50"
-            size={"sm"}
-          >
-            Start Teaching <Icon id="ArrowRight" className="ml-2 w-5" />
-          </Button>
-          <Image
-            src={becomeInstructor}
-            alt="instructor"
-            className="absolute bottom-0 right-10 w-44"
-          />
+          <div className="flex flex-col-reverse gap-3 lg:flex-row">
+            <div className="flex flex-col gap-3">
+              <p className="text-sm text-white md:w-64">
+                Instructors from around the world teach millions of students on
+                LMS Ginie. We provide the tools and skills to teach what you
+                love.
+              </p>
+              <Button
+                variant={"primarylight"}
+                type="button"
+                className="self-center bg-white hover:bg-gray-50 lg:self-start"
+                size={"sm"}
+              >
+                Start Teaching <Icon id="ArrowRight" className="ml-2 w-5" />
+              </Button>
+            </div>
+            <Image
+              src={becomeInstructor}
+              alt="instructor"
+              className="bottom-0 w-44 self-center md:w-32 lg:absolute lg:right-5 lg:w-40 xl:right-10 xl:w-44"
+            />
+          </div>
         </div>
 
         {/* for more details */}
-        <div className="flex flex-col items-center justify-center space-y-6 bg-white p-8">
+        <div className="flex flex-col items-center justify-center space-y-6 bg-white p-2 dark:bg-gray-900 lg:p-4 xl:p-8">
           <h1 className="self-start text-2xl font-semibold">
             Your teaching & earning steps
           </h1>
           {/* for steps */}
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 gap-5 self-start lg:grid-cols-2">
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 font-bold text-blue-500">
                 1
@@ -199,35 +204,41 @@ export default function Home() {
       </section>
 
       {/* top instructor of the month */}
-      <section className="relative -top-40 mx-2 space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
+      <section className="relative -top-40 mx-2 flex flex-col items-center justify-center space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
         <h1 className="text-center text-lg font-semibold dark:text-white md:text-xl lg:text-2xl">
           Top instructor of the month
         </h1>
 
         {/* container for top mentors */}
-        <div className="grid grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {Array.from({ length: 5 }).map((_, index) => {
             return (
-              <div key={index} className="w-48 border-[1.5px] border-gray-100">
+              <div
+                key={index}
+                className="w-32 border-[1.5px] border-gray-100 dark:bg-gray-900 sm:w-48"
+              >
                 <Image src={topMentor} alt="mentor" />
-                <div className="p-2">
-                  <h2 className="text-center font-medium text-gray-900">
+                <div className="p-1 sm:p-2">
+                  <h2 className="text-center text-sm font-medium text-gray-900 dark:text-white sm:text-base">
                     Harvi
                   </h2>
-                  <p className="text-center text-sm text-gray-500">
+                  <p className="text-center text-xs text-gray-500 sm:text-sm">
                     SDE3 @ Google
                   </p>
                 </div>
-                <div className="flex items-center justify-between border-t-[1.5px] border-gray-100 px-2 py-1">
+                <div className="flex flex-col items-center justify-between border-t-[1.5px] border-gray-100 px-2 sm:flex-row sm:py-1">
                   <div className="flex items-center gap-1 text-sm">
                     <Icon
                       id="Star"
-                      className="w-4 fill-primary-500 stroke-none"
+                      className="w-3 fill-primary-500 stroke-none sm:w-4"
                     />{" "}
-                    <p>4.9</p>
+                    <p className="text-xs sm:text-base">4.9</p>
                   </div>
-                  <p className="text-sm  text-gray-900">
-                    854 <span className="text-gray-500">students</span>
+                  <p className="text-xs text-gray-900  sm:text-sm">
+                    854{" "}
+                    <span className="text-sm text-gray-500 sm:text-base">
+                      students
+                    </span>
                   </p>
                 </div>
               </div>
