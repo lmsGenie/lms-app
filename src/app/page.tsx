@@ -2,7 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import becomeInstructor from "@/assets/becomeInstructor.png";
 import bannerImage from "@/assets/hero.png";
-import topMentor from "@/assets/topMentor.png";
+import googleImage from "@/assets/trustedCompanies/google.png";
+import lenovoImage from "@/assets/trustedCompanies/lenovo.png";
+import lexmarkImage from "@/assets/trustedCompanies/lexmark.png";
+import microsoftImage from "@/assets/trustedCompanies/microsoft.png";
+import netflixImage from "@/assets/trustedCompanies/netflix.png";
+import slackImage from "@/assets/trustedCompanies/slack.png";
+import verizonImage from "@/assets/trustedCompanies/verizon.png";
+import youtubeImage from "@/assets/trustedCompanies/youtube.png";
 import { categories, courses, users } from "@/sampledata";
 
 import { ICoursePartial } from "@/types/course";
@@ -13,7 +20,7 @@ import Icon from "@/components/icon/Icon";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       {/* hero section */}
       <section className="mb-4 flex gap-6 bg-gray-50 py-5 pl-10 dark:bg-gray-900 md:mb-6 md:gap-8 md:py-0 md:pl-16 lg:mb-8 lg:gap-10 lg:pl-20">
         <div className="flex flex-col justify-center gap-3">
@@ -112,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* recently added courses */}
-      <section className="relative -top-28 my-4 px-10 dark:bg-gray-900 md:my-6 md:px-16 lg:mt-14 lg:px-20">
+      <section className="relative -top-40 my-4 px-10 dark:bg-gray-900 md:my-6 md:px-16 lg:mt-14 lg:px-20">
         <h1 className="mb-4 text-center text-lg font-semibold dark:text-white md:mb-5 md:text-xl lg:mb-6 lg:text-2xl">
           Recently added courses
         </h1>
@@ -136,7 +143,7 @@ export default function Home() {
       </section>
 
       {/* become an instructor */}
-      <section className="relative my-4 grid grid-cols-1 gap-10 bg-gray-50 p-2 pb-40 dark:bg-gray-800 md:my-6 md:grid-cols-2 md:p-12 md:pb-40 lg:my-14 lg:p-20 lg:pb-40">
+      <section className="relative -top-40 my-4 grid grid-cols-1 gap-10 bg-gray-50 p-2 pb-40 dark:bg-gray-800 md:my-6 md:grid-cols-2 md:p-12 md:pb-40 lg:my-14 lg:p-20 lg:pb-40">
         <div className="relative space-y-3 bg-gradient-to-r from-orange-500 to-orange-400 p-2 lg:p-4 xl:p-8">
           <h1 className="text-center text-2xl font-semibold text-white lg:text-left">
             Become an instructor
@@ -204,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* top instructor of the month */}
-      <section className="relative -top-40 mx-2 flex flex-col items-center justify-center space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
+      <section className="relative -top-80 mx-2 flex flex-col items-center justify-center space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
         <h1 className="text-center text-lg font-semibold dark:text-white md:text-xl lg:text-2xl">
           Top instructor of the month
         </h1>
@@ -228,7 +235,7 @@ export default function Home() {
                     <h2 className="line-clamp-1 text-center text-sm font-medium text-gray-900 dark:text-white sm:text-base">
                       {user?.firstName + " " + user?.lastName}
                     </h2>
-                    <p className="text-center text-xs text-gray-500 sm:text-sm">
+                    <p className="line-clamp-2 text-center text-xs text-gray-500 sm:text-sm">
                       {user?.biography}
                     </p>
                   </div>
@@ -238,11 +245,11 @@ export default function Home() {
                         id="Star"
                         className="w-3 fill-primary-500 stroke-none sm:w-4"
                       />{" "}
-                      <p className="text-xs sm:text-base">4.9</p>
+                      <p className="text-xs sm:text-base">{user?.rating}</p>
                     </div>
-                    <p className="text-xs text-gray-900  sm:text-sm">
-                      854{" "}
-                      <span className="text-sm text-gray-500 sm:text-base">
+                    <p className="text-sm text-gray-900 sm:text-sm">
+                      {user?.totalStudents}
+                      <span className="ml-1 text-xs text-gray-500 sm:text-sm">
                         students
                       </span>
                     </p>
@@ -260,6 +267,52 @@ export default function Home() {
             Become Instructor <Icon id="ArrowRight" className="w-4" />
           </span>
         </p>
+      </section>
+
+      {/* trusted companies section */}
+      <section className="relative bottom-24 flex w-full flex-col items-center justify-center gap-10 md:absolute md:flex-row ">
+        <div className="space-y-2 md:w-96">
+          <h2 className="text-xl font-semibold md:text-2xl">
+            6.3k trusted companies
+          </h2>
+          <p className="w-72 text-xs text-gray-600">
+            Nullam egestas tellus at enim ornare tristique. Class aptent taciti
+            sociosqu ad litora torquent per conubia nostra.
+          </p>
+        </div>
+
+        {/* for companies logos */}
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div className="px-7 py-5 shadow-md">
+            <Image src={netflixImage} width={65} height={50} alt="netflix" />
+          </div>
+          <div className="px-7 py-5 shadow-md">
+            <Image src={youtubeImage} width={65} height={50} alt="youtube" />
+          </div>
+          <div className="px-7 py-5 shadow-md">
+            <Image src={googleImage} width={65} height={50} alt="google" />
+          </div>
+          <div className="px-7 py-5 shadow-md">
+            <Image src={lenovoImage} width={65} height={50} alt="lenovo" />
+          </div>
+          <div className="px-7 py-5 shadow-md">
+            <Image src={slackImage} width={65} height={50} alt="slack" />
+          </div>
+          <div className="px-7 py-5 shadow-md">
+            <Image src={verizonImage} width={65} height={50} alt="verizon" />
+          </div>
+          <div className="px-7 py-5 shadow-md">
+            <Image src={lexmarkImage} width={65} height={50} alt="lexmark" />
+          </div>
+          <div className="px-7 py-5 shadow-md">
+            <Image
+              src={microsoftImage}
+              width={65}
+              height={50}
+              alt="microsoft"
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
