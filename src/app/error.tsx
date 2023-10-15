@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import Image from "next/image";
-import pageNotFoundImage from "@/assets/404.png";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
@@ -30,9 +29,11 @@ const Error = ({
           </h2>
         </div>
         <p className="md:text-md text-sm text-gray-700 dark:text-gray-50 lg:text-lg">
-          Its look that some issue occurred while accessing this page. Please
+          It look that some issue occurred while accessing this page. Please
           retry or contact support{" "}
-          <span className="font-semibold"> dev.lmsgenie@gmail.com</span>
+          <Link href="mailto:dev.lmsgenie@gmail.com" className="font-semibold">
+            dev.lmsgenie@gmail.com
+          </Link>
         </p>
         <Button
           onClick={
