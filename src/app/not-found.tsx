@@ -21,8 +21,8 @@ const PageNotFound = () => {
           </h2>
         </div>
         <p className="md:text-md text-sm text-gray-700 dark:text-gray-50 lg:text-lg">
-          Something went wrong. Its look that your requested could not be found.
-          It look like the link is broken or the page is removed.
+          Something went wrong. It looks that your requested resource could not
+          be found. It looks like the link is broken or the page is removed.
         </p>
         <Button onClick={() => router.back()}>Go Back</Button>
       </div>

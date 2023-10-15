@@ -29,8 +29,8 @@ const Error = ({
           </h2>
         </div>
         <p className="md:text-md text-sm text-gray-700 dark:text-gray-50 lg:text-lg">
-          It look that some issue occurred while accessing this page. Please
-          retry or contact support{" "}
+          It looks that some issue occurred while accessing this page. Please
+          retry or contact support
           <Link href="mailto:dev.lmsgenie@gmail.com" className="font-semibold">
             dev.lmsgenie@gmail.com
           </Link>
