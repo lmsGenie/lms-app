@@ -270,7 +270,7 @@ export default function Home() {
       </section>
 
       {/* trusted companies section */}
-      <section className="absolute -bottom-32 flex w-full flex-col items-center justify-center gap-10 md:bottom-4 lg:bottom-24 lg:flex-row">
+      <section className="absolute -bottom-32 flex w-full flex-col items-center justify-center gap-10 md:-bottom-2 lg:flex-row xl:bottom-14">
         <div className="space-y-2 lg:w-96">
           <h2 className="text-xl font-semibold md:text-2xl">
             6.3k trusted companies
@@ -282,29 +282,29 @@ export default function Home() {
         </div>
 
         {/* for companies logos */}
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-          <div className="px-7 py-5 shadow-md">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="px-7 py-5 shadow-md dark:bg-gray-800 dark:shadow-gray-700 sm:px-10 sm:py-7">
             <Image src={netflixImage} width={65} height={50} alt="netflix" />
           </div>
-          <div className="px-7 py-5 shadow-md">
+          <div className="px-7 py-5 shadow-md dark:bg-gray-800 dark:shadow-gray-700 sm:px-10 sm:py-7">
             <Image src={youtubeImage} width={65} height={50} alt="youtube" />
           </div>
-          <div className="px-7 py-5 shadow-md">
+          <div className="px-7 py-5 shadow-md dark:bg-gray-800 dark:shadow-gray-700 sm:px-10 sm:py-7">
             <Image src={googleImage} width={65} height={50} alt="google" />
           </div>
-          <div className="px-7 py-5 shadow-md">
+          <div className="px-7 py-5 shadow-md dark:bg-gray-800 dark:shadow-gray-700 sm:px-10 sm:py-7">
             <Image src={lenovoImage} width={65} height={50} alt="lenovo" />
           </div>
-          <div className="px-7 py-5 shadow-md">
+          <div className="px-7 py-5 shadow-md dark:bg-gray-800 dark:shadow-gray-700 sm:px-10 sm:py-7">
             <Image src={slackImage} width={65} height={50} alt="slack" />
           </div>
-          <div className="px-7 py-5 shadow-md">
+          <div className="px-7 py-5 shadow-md dark:bg-gray-800 dark:shadow-gray-700 sm:px-10 sm:py-7">
             <Image src={verizonImage} width={65} height={50} alt="verizon" />
           </div>
-          <div className="px-7 py-5 shadow-md">
+          <div className="px-7 py-5 shadow-md dark:bg-gray-800 dark:shadow-gray-700 sm:px-10 sm:py-7">
             <Image src={lexmarkImage} width={65} height={50} alt="lexmark" />
           </div>
-          <div className="px-7 py-5 shadow-md">
+          <div className="px-7 py-5 shadow-md dark:bg-gray-800 dark:shadow-gray-700 sm:px-10 sm:py-7">
             <Image
               src={microsoftImage}
               width={65}
