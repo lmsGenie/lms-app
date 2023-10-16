@@ -211,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* top instructor of the month */}
-      <section className="relative -top-80 mx-2 flex flex-col items-center justify-center space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-11 md:p-5 lg:mx-10 lg:p-10">
+      <section className="relative -top-80 mx-2 mb-40 flex flex-col items-center justify-center space-y-5 border-2 border-gray-100 bg-white p-2 dark:bg-gray-800 md:mx-11 md:mb-10 md:p-5 lg:mx-10 lg:mb-10 lg:p-10">
         <h1 className="text-center text-lg font-semibold dark:text-white md:text-xl lg:text-2xl">
           Top instructor of the month
         </h1>
@@ -270,8 +270,8 @@ export default function Home() {
       </section>
 
       {/* trusted companies section */}
-      <section className="relative bottom-24 flex w-full flex-col items-center justify-center gap-10 md:absolute md:flex-row ">
-        <div className="space-y-2 md:w-96">
+      <section className="absolute -bottom-32 flex w-full flex-col items-center justify-center gap-10 md:bottom-4 lg:bottom-24 lg:flex-row">
+        <div className="space-y-2 lg:w-96">
           <h2 className="text-xl font-semibold md:text-2xl">
             6.3k trusted companies
           </h2>
