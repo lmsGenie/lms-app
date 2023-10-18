@@ -1,3 +1,4 @@
+import { IBranch } from "./types/contact";
 import { ICategory, ICoursePartial } from "./types/course";
 import { IUserPartial } from "./types/user";
 
@@ -186,6 +187,31 @@ export const users: IUserPartial[] = [
     isActive: true,
     isEmailVerified: true,
     loginCount: 100,
+  },
+];
+
+export const branches: IBranch[] = [
+  {
+    id: "1",
+    branchType: "MAIN BRANCHE",
+    branchName: "Los Angeles, California",
+    branchDescription: "1702 Olympic Boulevard Santa Monica, CA 90404",
+  },
+  {
+    id: "2",
+    branchName: "Los Angeles, California",
+    branchDescription: "1702 Olympic Boulevard Santa Monica, CA 90404",
+  },
+  {
+    id: "3",
+    branchName: "Los Angeles, California",
+    branchDescription: "1702 Olympic Boulevard Santa Monica, CA 90404",
+  },
+  {
+    id: "4",
+    branchType: "MAIN BRANCHE",
+    branchName: "Los Angeles, California",
+    branchDescription: "1702 Olympic Boulevard Santa Monica, CA 90404",
   },
 ];
 
