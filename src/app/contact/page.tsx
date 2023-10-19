@@ -44,12 +44,12 @@ const page = () => {
       <Breadcrumb title="Contact" />
 
       {/* main section */}
-      <main className="flex flex-col-reverse items-center gap-3 border-b-[1px] border-orange-500 py-5 sm:flex-row sm:px-10 sm:py-0 sm:pt-2 xl:gap-20 xl:px-48 xl:pt-10">
+      <main className="flex flex-col-reverse items-center gap-3 border-b-[1px] border-gray-500 py-5 dark:border-gray-800 sm:flex-row sm:px-10 sm:py-0 sm:pt-2 xl:gap-20 xl:px-48 xl:pt-10">
         <div className="flex flex-col items-center space-y-3 p-2 sm:items-start lg:p-0">
           <h1 className="text-2xl font-semibold lg:text-3xl">
             Connect with us
           </h1>
-          <p className="text-sm text-gray-700 lg:text-base">
+          <p className="text-sm text-gray-700 dark:text-gray-300 lg:text-base">
             Want to chat? We’d love to hear from you! Get in touch with our
             Customer Success Team to inquire about speaking events, advertising
             rates, or just say hello.
@@ -72,7 +72,7 @@ const page = () => {
           <h1 className="text-xl font-semibold md:text-3xl">
             Our branches all over the world.
           </h1>
-          <p className="px-5 text-sm text-gray-700 md:text-base">
+          <p className="px-5 text-sm text-gray-700 dark:text-gray-300 md:text-base">
             Phasellus sed quam eu eros faucibus cursus. Quisque mauris urna,
             imperdiet id leo quis, luctus auctor nisi.
           </p>
@@ -92,7 +92,9 @@ const page = () => {
                       {branch?.branchType}
                     </p>
                   )}
-                  <h3 className="text-sm font-medium">{branch?.branchName}</h3>
+                  <h3 className="text-sm font-medium dark:text-gray-700">
+                    {branch?.branchName}
+                  </h3>
                   <p className="text-xs text-gray-600">
                     {branch?.branchDescription}
                   </p>
@@ -103,7 +105,7 @@ const page = () => {
       </section>
 
       {/* contact form */}
-      <section className="flex flex-col items-center gap-2 bg-gray-50 py-5 sm:px-10 md:gap-10 md:py-10 xl:px-48">
+      <section className="flex flex-col items-center gap-2 bg-gray-50 py-5 dark:bg-gray-800 sm:px-10 md:gap-10 md:py-10 xl:px-48">
         <h1 className="text-xl font-semibold md:text-3xl">Contact Us</h1>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[40%_auto] md:gap-5 lg:gap-10">
           {/* left one */}
@@ -129,7 +131,7 @@ const page = () => {
 
           {/* contact form */}
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="flex flex-col gap-5 bg-white p-2 sm:p-5 lg:p-10">
+            <div className="flex flex-col gap-5 bg-white p-2 dark:bg-gray-900 sm:p-5 lg:p-10">
               {/* form header details */}
               <div className="space-y-1">
                 <h1 className="text-lg font-semibold md:text-2xl">
@@ -310,6 +312,19 @@ const page = () => {
           </form>
         </div>
       </section>
+
+      {/* google map */}
+      <div>
+        <iframe
+          title="Google map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113996.470884993!2d83.3215085045414!3d26.763844606559932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991446a0c332489%3A0x1ff3f97fdcc6bfa2!2sGorakhpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1697737057968!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
     </div>
   );
 };

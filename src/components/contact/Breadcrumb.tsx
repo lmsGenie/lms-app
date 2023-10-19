@@ -8,7 +8,7 @@ interface IProps {
 
 function Breadcrumb({ title }: IProps) {
   return (
-    <div className="space-y-2 bg-gray-50 py-10 text-center">
+    <div className="space-y-2 bg-gray-50 py-10 text-center dark:bg-gray-800">
       <h1 className="text-2xl font-semibold">{title}</h1>
       <p className="text-sm">
         <span className="text-gray-600">Home / </span>
