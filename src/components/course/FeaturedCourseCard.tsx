@@ -9,7 +9,7 @@ interface IProps {
   data: ICoursePartial;
 }
 
-const FeaturedCourseCard = ({ data }: IProps) => {
+function FeaturedCourseCard({ data }: IProps) {
   return (
     <div className="flex cursor-pointer flex-col border-[1.5px] border-gray-100 transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md lg:flex-row">
       <Image
@@ -22,9 +22,9 @@ const FeaturedCourseCard = ({ data }: IProps) => {
       <div className="w-full space-y-1 lg:w-[70%]">
         {/* for right side header */}
         <div className="mt-3 flex items-center justify-between px-3">
-          <label className="bg-primary-100 px-3 py-1 text-xs font-semibold text-success-700">
+          <p className="bg-primary-100 px-3 py-1 text-xs font-semibold text-success-700">
             {data?.category?.[0]}
-          </label>
+          </p>
 
           {data?.discountedPrice ? (
             data?.listPrice && (
@@ -108,6 +108,6 @@ const FeaturedCourseCard = ({ data }: IProps) => {
       </div>
     </div>
   );
-};
+}
 
 export default FeaturedCourseCard;

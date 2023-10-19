@@ -6,7 +6,7 @@ import pageNotFoundImage from "@/assets/404.png";
 
 import { Button } from "@/components/ui/button";
 
-const PageNotFound = () => {
+function PageNotFound() {
   const router = useRouter();
 
   return (
@@ -31,6 +31,6 @@ const PageNotFound = () => {
       </div>
     </main>
   );
-};
+}
 
 export default PageNotFound;

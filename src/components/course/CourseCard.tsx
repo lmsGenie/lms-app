@@ -15,7 +15,7 @@ interface IProps {
   data: ICoursePartial;
 }
 
-const CourseCard = ({ data }: IProps) => {
+function CourseCard({ data }: IProps) {
   return (
     <HoverCard>
       <HoverCardTrigger>
@@ -124,7 +124,7 @@ const CourseCard = ({ data }: IProps) => {
             <div className="flex items-center gap-1">
               <Icon id="User" className="w-4 stroke-secondary-500 2xl:w-5" />
               <p className="text-xs text-gray-700 dark:text-gray-100 2xl:text-sm">
-                {data?.totalEnrollments}K <span>students</span>
+                {data?.totalEnrollments}K<span>students</span>
               </p>
             </div>
 
@@ -168,11 +168,7 @@ const CourseCard = ({ data }: IProps) => {
             </div>
 
             {/* for wishlist */}
-            <Button
-              variant={"primarylight"}
-              size={"sm"}
-              className="px-3 2xl:p-3"
-            >
+            <Button variant="primarylight" size="sm" className="px-3 2xl:p-3">
               <Icon id="Heart" className="w-4 stroke-primary-500 2xl:w-6" />
             </Button>
           </div>
@@ -202,11 +198,11 @@ const CourseCard = ({ data }: IProps) => {
 
           {/* buttons */}
           <div className="flex w-full flex-col gap-2 px-2">
-            <Button className="space-x-2" size={"sm"}>
+            <Button className="space-x-2" size="sm">
               <Icon id="ShoppingCart" className="w-5 2xl:w-6" />
               <p className="text-sm 2xl:text-base">Add to Cart</p>
             </Button>
-            <Button variant="primarylight" size={"sm"}>
+            <Button variant="primarylight" size="sm">
               <p className="text-sm 2xl:text-base">Course Details</p>
             </Button>
           </div>
@@ -214,6 +210,6 @@ const CourseCard = ({ data }: IProps) => {
       </HoverCardContent>
     </HoverCard>
   );
-};
+}
 
 export default CourseCard;

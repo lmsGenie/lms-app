@@ -6,7 +6,7 @@ interface IProps {
   title: string;
 }
 
-const Breadcrumb = ({ title }: IProps) => {
+function Breadcrumb({ title }: IProps) {
   return (
     <div className="space-y-2 bg-gray-50 py-10 text-center">
       <h1 className="text-2xl font-semibold">{title}</h1>
@@ -16,6 +16,6 @@ const Breadcrumb = ({ title }: IProps) => {
       </p>
     </div>
   );
-};
+}
 
 export default Breadcrumb;
