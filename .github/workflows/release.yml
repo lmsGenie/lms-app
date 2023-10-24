@@ -4,8 +4,7 @@ on:
     branches: [test]
   pull_request:
     branches: [test]
-permissions:
-  repository-projects: write
+permissions: write-all
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
@@ -25,4 +24,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
       - run: pnpm install --frozen-lockfile
-      - run: npx semantic-release
+      - run: pnpx semantic-release
