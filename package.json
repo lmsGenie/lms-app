@@ -53,7 +53,8 @@
     "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
     "prettier": "3.0.2",
-    "prettier-plugin-tailwindcss": "^0.5.3"
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "semantic-release": "^22.0.5"
   },
   "lint-staged": {
     "*.{css,less,scss,html,json,jsx,js}": [
