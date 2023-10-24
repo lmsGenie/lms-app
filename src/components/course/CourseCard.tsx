@@ -124,7 +124,8 @@ function CourseCard({ data }: IProps) {
             <div className="flex items-center gap-1">
               <Icon id="User" className="w-4 stroke-secondary-500 2xl:w-5" />
               <p className="text-xs text-gray-700 dark:text-gray-100 2xl:text-sm">
-                {data?.totalEnrollments}K<span>students</span>
+                {data?.totalEnrollments}
+                <span>students</span>
               </p>
             </div>
 
