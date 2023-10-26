@@ -1,5 +1,5 @@
 import { IBranch } from "./types/contact";
-import { ICategory, ICoursePartial } from "./types/course";
+import { ICategory, IContactDetails, ICoursePartial } from "./types/course";
 import { IUserPartial } from "./types/user";
 
 export const categories: ICategory[] = [
@@ -587,3 +587,10 @@ export const courses: ICoursePartial[] = [
     ],
   },
 ];
+
+// contact details for contact page
+export const contactDetails: IContactDetails = {
+  address: "1702 Olympic Boulevard Santa Monica, CA 90404",
+  email: "test@gmail.com",
+  phoneNumber: "(219) 555-0114",
+};

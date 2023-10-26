@@ -21,18 +21,21 @@ import { Button } from "../ui/button";
 
 // schema for contact form
 const contactFormSchema = z.object({
-  firstName: z.string().min(3, {
+  firstName: z.string().trim().min(3, {
     message: "Please enter a valid first name",
   }),
-  lastName: z.string().min(3, {
+  lastName: z.string().trim().min(3, {
     message: "Please enter a valid last name",
   }),
-  email: z.string().email("Please enter a valid email"),
-  subject: z.string().min(5, "Please enter a valid subject"),
-  message: z.string().min(20, "Please enter a valid message"),
+  email: z.string().trim().email("Please enter a valid email"),
+  subject: z.string().trim().min(5, "Please enter a valid subject"),
+  message: z.string().trim().min(20, "Please enter a valid message"),
 });
 
 function ContactForm() {
+  const {
+    formState: { isSubmitting },
+  } = useForm();
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -52,7 +55,7 @@ function ContactForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-        <div className="flex flex-col items-center gap-5 lg:flex-row">
+        <div className="flex flex-col gap-5 lg:flex-row">
           {/* for first name */}
           <FormField
             control={form.control}
@@ -133,8 +136,12 @@ function ContactForm() {
           )}
         />
 
-        <Button type="submit" className="w-full lg:w-fit">
-          Send message
+        <Button
+          type="submit"
+          className="w-full lg:w-fit"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Submitting ..." : "Send message"}
           <Icon id="PaperPlaneRight" className="ml-2 w-4" />
         </Button>
       </form>

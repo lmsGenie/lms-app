@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import mainImage from "@/assets/contactPage/main.png";
-import { branches } from "@/sampledata";
+import { branches, contactDetails } from "@/sampledata";
 
 import { IBranch } from "@/types/contact";
 import { Button } from "@/components/ui/button";
@@ -86,15 +86,15 @@ const page = () => (
           {/* for details */}
           <div className="grid grid-cols-[40%_auto] gap-5 text-sm">
             <p className="font-medium uppercase text-primary-500">address</p>
-            <p>1702 Olympic Boulevard Santa Monica, CA 90404</p>
+            <p>{contactDetails?.address}</p>
             <p className="font-medium uppercase text-primary-500">
               phone number
             </p>
-            <p>(219) 555-0114</p>
+            <p>{contactDetails?.phoneNumber}</p>
             <p className="font-medium uppercase text-primary-500">
               email address
             </p>
-            <p>test@gmail.com</p>
+            <p>{contactDetails?.email}</p>
           </div>
         </div>
 

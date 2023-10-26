@@ -49,3 +49,9 @@ export interface ICourse {
 }
 
 export type ICoursePartial = Partial<ICourse>;
+
+export interface IContactDetails {
+  address: string;
+  phoneNumber: string;
+  email: string;
+}
