@@ -591,6 +591,6 @@ export const courses: ICoursePartial[] = [
 // contact details for contact page
 export const contactDetails: IContactDetails = {
   address: "1702 Olympic Boulevard Santa Monica, CA 90404",
-  email: "test@gmail.com",
+  email: "dev.lmsgenie@gmail.com",
   phoneNumber: "(219) 555-0114",
 };
