@@ -109,17 +109,27 @@ const page = () => {
               Stop by the office! We'd love to meet.
             </p>
             {/* for details */}
-            <div className="grid grid-cols-[40%_auto] gap-5 text-sm">
-              <p className="font-medium uppercase text-primary-500">address</p>
-              <p>{contactDetails?.address}</p>
-              <p className="font-medium uppercase text-primary-500">
-                phone number
-              </p>
-              <p>{contactDetails?.phoneNumber}</p>
-              <p className="font-medium uppercase text-primary-500">
-                email address
-              </p>
-              <p>{contactDetails?.email}</p>
+            <div className="grid grid-rows-3 text-sm">
+              <div className="grid grid-cols-[40%_auto] border-b border-gray-100 py-5">
+                <p className="font-medium uppercase text-primary-500">
+                  address
+                </p>
+                <p>{contactDetails?.address}</p>
+              </div>
+
+              <div className="grid h-fit grid-cols-[40%_auto] border-b border-gray-100 py-5">
+                <p className="font-medium uppercase text-primary-500">
+                  phone number
+                </p>
+                <p>{contactDetails?.phoneNumber}</p>
+              </div>
+
+              <div className="grid h-fit grid-cols-[40%_auto]">
+                <p className="font-medium uppercase text-primary-500">
+                  email address
+                </p>
+                <p>{contactDetails?.email}</p>
+              </div>
             </div>
           </section>
 
