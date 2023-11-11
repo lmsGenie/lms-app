@@ -1,4 +1,4 @@
-import { IconProps } from "@/types/icon";
+import { IconProps } from "@/types/icon/index.ts";
 
 function Icon({ id, className }: IconProps) {
   return (

@@ -1,21 +1,21 @@
-import Image from "next/image";
-import { DEFAULT_AVATAR } from "@/utils/contants";
+import Image from "next/image.js";
+import DEFAULT_AVATAR from "@/utils/contants.ts";
 
-import { ICoursePartial } from "@/types/course";
+import { ICoursePartial } from "@/types/course/index.ts";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/components/ui/hover-card";
+} from "@/components/ui/hover-card.tsx";
 
-import Icon from "../icon/Icon";
-import { Button } from "../ui/button";
+import Icon from "../icon/Icon.tsx";
+import { Button } from "../ui/button.tsx";
 
 interface IProps {
   data: ICoursePartial;
 }
 
-const CourseCard = ({ data }: IProps) => {
+function CourseCard({ data }: IProps) {
   return (
     <HoverCard>
       <HoverCardTrigger>
@@ -35,10 +35,8 @@ const CourseCard = ({ data }: IProps) => {
             {/* for price */}
             <p className="font-bold text-primary-500">
               {data?.discountedPrice?.price
-                ? data?.discountedPrice?.currencySymbol +
-                  data?.discountedPrice?.price
-                : data?.discountedPrice?.currencySymbol! +
-                  data?.discountedPrice?.price}
+                ? `${data?.discountedPrice?.currencySymbol} ${data?.discountedPrice?.price}`
+                : `${data?.listPrice?.currencySymbol} ${data.listPrice?.price}`}
             </p>
           </div>
 
@@ -151,28 +149,21 @@ const CourseCard = ({ data }: IProps) => {
             <div className=" flex w-fit items-center gap-1">
               {data?.discountedPrice?.price ? (
                 <p className="flex items-center gap-1 text-lg text-gray-900 dark:text-gray-100 2xl:text-2xl">
-                  {data?.discountedPrice?.currencySymbol +
-                    data?.discountedPrice?.price}
+                  {`${data?.discountedPrice?.currencySymbol} ${data?.discountedPrice?.price}`}
                   <s className="text-sm text-gray-500 dark:text-gray-50 2xl:text-base">
-                    {data?.listPrice &&
-                      data?.listPrice?.currencySymbol + data?.listPrice?.price}
+                    {`${data?.listPrice?.currencySymbol} ${data?.listPrice?.price}`}
                   </s>
                   <p className="ml-2 w-fit bg-primary-100 px-3 py-2 text-xs font-medium text-primary-500 2xl:text-sm">
-                    {data?.discountPercentage}% OFF
+                    {`${data?.discountPercentage} %OFF`}
                   </p>
                 </p>
               ) : (
-                data?.discountedPrice?.currencySymbol! +
-                data?.discountedPrice?.price
+                `${data?.discountedPrice?.currencySymbol} ${data?.discountedPrice?.price}`
               )}
             </div>
 
             {/* for wishlist */}
-            <Button
-              variant={"primarylight"}
-              size={"sm"}
-              className="px-3 2xl:p-3"
-            >
+            <Button variant="primarylight" size="sm" className="px-3 2xl:p-3">
               <Icon id="Heart" className="w-4 stroke-primary-500 2xl:w-6" />
             </Button>
           </div>
@@ -202,11 +193,11 @@ const CourseCard = ({ data }: IProps) => {
 
           {/* buttons */}
           <div className="flex w-full flex-col gap-2 px-2">
-            <Button className="space-x-2" size={"sm"}>
+            <Button className="space-x-2" size="sm">
               <Icon id="ShoppingCart" className="w-5 2xl:w-6" />
               <p className="text-sm 2xl:text-base">Add to Cart</p>
             </Button>
-            <Button variant="primarylight" size={"sm"}>
+            <Button variant="primarylight" size="sm">
               <p className="text-sm 2xl:text-base">Course Details</p>
             </Button>
           </div>
@@ -214,6 +205,6 @@ const CourseCard = ({ data }: IProps) => {
       </HoverCardContent>
     </HoverCard>
   );
-};
+}
 
 export default CourseCard;

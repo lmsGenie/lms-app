@@ -1,7 +1,8 @@
-import { IdType } from "../icon";
-import { IUserPartial } from "../user";
+import { IdType } from "../icon/index.ts";
+import { IUserPartial } from "../user/index.ts";
 
 export interface ICategory {
+  id: string;
   name: string;
   path: string;
   iconId: IdType;

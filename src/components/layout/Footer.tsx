@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link.js";
 
 import {
   Select,
@@ -6,9 +6,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select.tsx";
 
-import Icon from "../icon/Icon";
+import Icon from "../icon/Icon.tsx";
 
 function Footer() {
   return (

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image.js";
+import Link from "next/link.js";
 import becomeInstructor from "@/assets/becomeInstructor.png";
 import bannerImage from "@/assets/hero.png";
 import googleImage from "@/assets/trustedCompanies/google.png";
@@ -10,13 +10,13 @@ import netflixImage from "@/assets/trustedCompanies/netflix.png";
 import slackImage from "@/assets/trustedCompanies/slack.png";
 import verizonImage from "@/assets/trustedCompanies/verizon.png";
 import youtubeImage from "@/assets/trustedCompanies/youtube.png";
-import { categories, courses, users } from "@/sampledata";
+import { categories, courses, users } from "@/sampledata.ts";
 
-import { ICoursePartial } from "@/types/course";
-import { Button } from "@/components/ui/button";
-import CourseCard from "@/components/course/CourseCard";
-import FeaturedCourseCard from "@/components/course/FeaturedCourseCard";
-import Icon from "@/components/icon/Icon";
+import { ICoursePartial } from "@/types/course/index.ts";
+import { Button } from "@/components/ui/button.tsx";
+import CourseCard from "@/components/course/CourseCard.tsx";
+import FeaturedCourseCard from "@/components/course/FeaturedCourseCard.tsx";
+import Icon from "@/components/icon/Icon.tsx";
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
           {categories.map((item, index) => (
             <Link
               href={item.path}
-              key={Date.now() + index}
+              key={item.id}
               className={`${index > 3 ? "hidden" : "block"}
                 sm:${index > 5 ? "hidden" : "block"}
                 lg:${index > 11 ? "hidden" : "block"}`}
@@ -91,9 +91,9 @@ export default function Home() {
         </h1>
         {/* container for courses card */}
         <div className="grid cursor-pointer grid-cols-1 gap-5 pb-40 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {courses.map((courseData: ICoursePartial) => {
-            return <CourseCard key={courseData.id} data={courseData} />;
-          })}
+          {courses.map((courseData: ICoursePartial) => (
+            <CourseCard key={courseData.id} data={courseData} />
+          ))}
         </div>
       </section>
 
@@ -112,9 +112,9 @@ export default function Home() {
 
         {/* container for featured courses card */}
         <div className="grid grid-cols-1 gap-5  md:grid-cols-2">
-          {courses.map((courseData: ICoursePartial) => {
-            return <FeaturedCourseCard key={courseData.id} data={courseData} />;
-          })}
+          {courses.map((courseData: ICoursePartial) => (
+            <FeaturedCourseCard key={courseData.id} data={courseData} />
+          ))}
         </div>
       </section>
 
@@ -125,15 +125,15 @@ export default function Home() {
         </h1>
         {/* container for courses card */}
         <div className="grid cursor-pointer grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {courses.map((courseData: ICoursePartial) => {
-            return <CourseCard key={courseData.id} data={courseData} />;
-          })}
+          {courses.map((courseData: ICoursePartial) => (
+            <CourseCard key={courseData.id} data={courseData} />
+          ))}
         </div>
 
         {/* button for explore more */}
         <div className="text-center">
           <Button
-            variant={"primarylight"}
+            variant="primarylight"
             type="button"
             className="mx-auto mt-10"
           >
@@ -156,12 +156,13 @@ export default function Home() {
                 love.
               </p>
               <Button
-                variant={"primarylight"}
+                variant="primarylight"
                 type="button"
                 className="self-center bg-white hover:bg-gray-50 lg:self-start"
-                size={"sm"}
+                size="sm"
               >
-                Start Teaching <Icon id="ArrowRight" className="ml-2 w-5" />
+                Start Teaching
+                <Icon id="ArrowRight" className="ml-2 w-5" />
               </Button>
             </div>
             <Image
@@ -219,44 +220,42 @@ export default function Home() {
         {/* container for top mentors */}
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {users &&
-            users.map((user) => {
-              return (
-                <div
-                  key={user?.id}
-                  className="w-32 border-[1.5px] border-gray-100 dark:bg-gray-900 sm:w-48"
-                >
-                  <Image
-                    width={200}
-                    height={100}
-                    src={user?.profilePicture!}
-                    alt="mentor"
-                  />
-                  <div className="p-1 sm:p-2">
-                    <h2 className="line-clamp-1 text-center text-sm font-medium text-gray-900 dark:text-white sm:text-base">
-                      {user?.firstName + " " + user?.lastName}
-                    </h2>
-                    <p className="line-clamp-2 text-center text-xs text-gray-500 sm:text-sm">
-                      {user?.biography}
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-center justify-between border-t-[1.5px] border-gray-100 px-2 sm:flex-row sm:py-1">
-                    <div className="flex items-center gap-1 text-sm">
-                      <Icon
-                        id="Star"
-                        className="w-3 fill-primary-500 stroke-none sm:w-4"
-                      />{" "}
-                      <p className="text-xs sm:text-base">{user?.rating}</p>
-                    </div>
-                    <p className="text-sm text-gray-900 sm:text-sm">
-                      {user?.totalStudents}
-                      <span className="ml-1 text-xs text-gray-500 sm:text-sm">
-                        students
-                      </span>
-                    </p>
-                  </div>
+            users.map((user) => (
+              <div
+                key={user?.id}
+                className="w-32 border-[1.5px] border-gray-100 dark:bg-gray-900 sm:w-48"
+              >
+                <Image
+                  width={200}
+                  height={100}
+                  src={user?.profilePicture!}
+                  alt="mentor"
+                />
+                <div className="p-1 sm:p-2">
+                  <h2 className="line-clamp-1 text-center text-sm font-medium text-gray-900 dark:text-white sm:text-base">
+                    {`${user?.firstName} ${user?.lastName}`}
+                  </h2>
+                  <p className="line-clamp-2 text-center text-xs text-gray-500 sm:text-sm">
+                    {user?.biography}
+                  </p>
                 </div>
-              );
-            })}
+                <div className="flex flex-col items-center justify-between border-t-[1.5px] border-gray-100 px-2 sm:flex-row sm:py-1">
+                  <div className="flex items-center gap-1 text-sm">
+                    <Icon
+                      id="Star"
+                      className="w-3 fill-primary-500 stroke-none sm:w-4"
+                    />
+                    <p className="text-xs sm:text-base">{user?.rating}</p>
+                  </div>
+                  <p className="text-sm text-gray-900 sm:text-sm">
+                    {user?.totalStudents}
+                    <span className="ml-1 text-xs text-gray-500 sm:text-sm">
+                      students
+                    </span>
+                  </p>
+                </div>
+              </div>
+            ))}
         </div>
 
         {/* bottom line */}

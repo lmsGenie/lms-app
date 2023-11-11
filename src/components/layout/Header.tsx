@@ -1,34 +1,34 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { categories } from "@/sampledata";
+import Link from "next/link.js";
+import { usePathname } from "next/navigation.js";
+import { categories } from "@/sampledata.ts";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button.tsx";
+import { Input } from "@/components/ui/input.tsx";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+} from "@/components/ui/navigation-menu.tsx";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select.tsx";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/ui/sheet.tsx";
 
-import Icon from "../icon/Icon";
-import ModeToggle from "../toggle/ModeToggle";
-import { Separator } from "../ui/separator";
+import Icon from "../icon/Icon.tsx";
+import ModeToggle from "../toggle/ModeToggle.tsx";
+import { Separator } from "../ui/separator.tsx";
 
 function Header() {
   /* Get the current route */

@@ -3,4 +3,4 @@ node_modules
 dist
 conmmitlint.config.js
 prettier.config.js
-src/components/ui
+src/components/ui/*

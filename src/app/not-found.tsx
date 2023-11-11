@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Image from "next/image.js";
+import { useRouter } from "next/navigation.js";
 import pageNotFoundImage from "@/assets/404.png";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.tsx";
 
-const PageNotFound = () => {
+function PageNotFound() {
   const router = useRouter();
 
   return (
@@ -31,6 +31,6 @@ const PageNotFound = () => {
       </div>
     </main>
   );
-};
+}
 
 export default PageNotFound;
