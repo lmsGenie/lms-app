@@ -1,17 +1,17 @@
 "use client";
 
 import { useEffect } from "react";
-import Link from "next/link";
+import Link from "next/link.js";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.tsx";
 
-const Error = ({
+function Error({
   error,
   reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
-}) => {
+}) {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error);
@@ -46,6 +46,6 @@ const Error = ({
       </div>
     </main>
   );
-};
+}
 
 export default Error;

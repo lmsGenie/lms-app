@@ -4,3 +4,4 @@ node_modules
 build
 .contentlayer
 coverage
+src/components/ui/*

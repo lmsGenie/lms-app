@@ -6,10 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "turbo": "next dev --turbo",
-    "format": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -50,17 +51,18 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
     "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
     "prettier": "3.0.2",
     "prettier-plugin-tailwindcss": "^0.5.3",
-    "semantic-release": "^22.0.5"
+    "semantic-release": "^22.0.5",
+    "tslint-config-prettier": "^1.18.0"
   },
   "lint-staged": {
-    "*.{css,less,scss,html,json,jsx,js}": [
-      "prettier --check ."
-    ],
-    "*.js": "eslint --fix"
+    "*": [
+      "pnpm format"
+    ]
   },
   "config": {
     "commitizen": {

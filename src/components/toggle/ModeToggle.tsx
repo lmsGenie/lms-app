@@ -2,15 +2,15 @@
 
 import { useTheme } from "next-themes";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.tsx";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu.tsx";
 
-import Icon from "../icon/Icon";
+import Icon from "../icon/Icon.tsx";
 
 export default function ModeToggle() {
   const { setTheme } = useTheme();

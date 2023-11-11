@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+// eslint-disable-next-line import/extensions
 import { Inter } from "next/font/google";
 
 import "./globals.css";
 
-import Footer from "@/components/layout/Footer";
-import Header from "@/components/layout/Header";
-import ThemeProvider from "@/components/theme-provider";
+import Footer from "@/components/layout/Footer.tsx";
+import Header from "@/components/layout/Header.tsx";
+import ThemeProvider from "@/components/theme-provider.tsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
