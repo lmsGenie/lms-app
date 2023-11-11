@@ -101,7 +101,7 @@ export const users: IUserPartial[] = [
     biography: "Web Designer & Best-Selling Instructor",
     socialProfiles: undefined,
     profilePicture:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
     slug: "vako-shvili",
     rating: 5,
     totalStudents: 0,
@@ -123,7 +123,7 @@ export const users: IUserPartial[] = [
     biography: "Web Designer & Best-Selling Instructor",
     socialProfiles: undefined,
     profilePicture:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862572/lmsGenie%20assets/user/user4_qp6e9h.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862572/lmsGenie%20assets/user/user4_qp6e9h.jpg",
     slug: "alex-chem",
     rating: 5,
     totalStudents: 0,
@@ -145,7 +145,7 @@ export const users: IUserPartial[] = [
     biography: "Web Designer & Best-Selling Instructor",
     socialProfiles: undefined,
     profilePicture:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862571/lmsGenie%20assets/user/user2_cysjyo.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862571/lmsGenie%20assets/user/user2_cysjyo.jpg",
     slug: "shivani-kumari",
     rating: 5,
     totalStudents: 0,
@@ -167,7 +167,7 @@ export const users: IUserPartial[] = [
     biography: "Web Designer & Best-Selling Instructor",
     socialProfiles: undefined,
     profilePicture:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862570/lmsGenie%20assets/user/user3_qhjpmu.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862570/lmsGenie%20assets/user/user3_qhjpmu.jpg",
     slug: "rahul-awasthi",
     rating: 5,
     totalStudents: 0,
@@ -189,7 +189,7 @@ export const users: IUserPartial[] = [
     biography: "Web Designer & Best-Selling Instructor",
     socialProfiles: undefined,
     profilePicture:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862570/lmsGenie%20assets/user/user3_qhjpmu.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862570/lmsGenie%20assets/user/user3_qhjpmu.jpg",
     slug: "jitendra-thakur",
     rating: 5,
     totalStudents: 0,
@@ -206,7 +206,7 @@ export const courses: ICoursePartial[] = [
     id: "1",
     category: ["FINANCE AND ACCOUNTING"],
     thumbnail:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862207/lmsGenie%20assets/course/course6_tclpvl.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862207/lmsGenie%20assets/course/course6_tclpvl.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -236,7 +236,7 @@ export const courses: ICoursePartial[] = [
         biography: "Web Designer & Best-Selling Instructor",
         socialProfiles: undefined,
         profilePicture:
-          "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+          "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
         slug: "vako-shvili",
         rating: 5,
         totalStudents: 0,
@@ -252,7 +252,7 @@ export const courses: ICoursePartial[] = [
     id: "2",
     category: ["LIFE STYLE"],
     thumbnail:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862205/lmsGenie%20assets/course/course1_p9jghe.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862205/lmsGenie%20assets/course/course1_p9jghe.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -282,7 +282,7 @@ export const courses: ICoursePartial[] = [
         biography: "Web Designer & Best-Selling Instructor",
         socialProfiles: undefined,
         profilePicture:
-          "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+          "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
         slug: "vako-shvili",
         rating: 5,
         totalStudents: 0,
@@ -298,7 +298,7 @@ export const courses: ICoursePartial[] = [
     id: "3",
     category: ["BUSINESS"],
     thumbnail:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862198/lmsGenie%20assets/course/course4_zzetiz.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862198/lmsGenie%20assets/course/course4_zzetiz.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -329,7 +329,7 @@ export const courses: ICoursePartial[] = [
         biography: "Web Designer & Best-Selling Instructor",
         socialProfiles: undefined,
         profilePicture:
-          "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+          "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
         slug: "vako-shvili",
         rating: 5,
         totalStudents: 0,
@@ -345,7 +345,7 @@ export const courses: ICoursePartial[] = [
     id: "4",
     category: ["BUSINESS"],
     thumbnail:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862197/lmsGenie%20assets/course/course2_zh4bxx.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862197/lmsGenie%20assets/course/course2_zh4bxx.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -375,7 +375,7 @@ export const courses: ICoursePartial[] = [
         biography: "Web Designer & Best-Selling Instructor",
         socialProfiles: undefined,
         profilePicture:
-          "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+          "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
         slug: "vako-shvili",
         rating: 5,
         totalStudents: 0,
@@ -391,7 +391,7 @@ export const courses: ICoursePartial[] = [
     id: "5",
     category: ["MUSIC"],
     thumbnail:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862197/lmsGenie%20assets/course/course10_dwwbdy.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862197/lmsGenie%20assets/course/course10_dwwbdy.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -421,7 +421,7 @@ export const courses: ICoursePartial[] = [
         biography: "Web Designer & Best-Selling Instructor",
         socialProfiles: undefined,
         profilePicture:
-          "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+          "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
         slug: "vako-shvili",
         rating: 5,
         totalStudents: 0,
@@ -437,7 +437,7 @@ export const courses: ICoursePartial[] = [
     id: "6",
     category: ["BUSINESS"],
     thumbnail:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862197/lmsGenie%20assets/course/course8_usweyy.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862197/lmsGenie%20assets/course/course8_usweyy.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -467,7 +467,7 @@ export const courses: ICoursePartial[] = [
         biography: "Web Designer & Best-Selling Instructor",
         socialProfiles: undefined,
         profilePicture:
-          "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+          "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
         slug: "vako-shvili",
         rating: 5,
         totalStudents: 0,
@@ -483,7 +483,7 @@ export const courses: ICoursePartial[] = [
     id: "7",
     category: ["MUSIC"],
     thumbnail:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862194/lmsGenie%20assets/course/course9_o73qqh.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862194/lmsGenie%20assets/course/course9_o73qqh.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -513,7 +513,7 @@ export const courses: ICoursePartial[] = [
         biography: "Web Designer & Best-Selling Instructor",
         socialProfiles: undefined,
         profilePicture:
-          "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+          "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
         slug: "vako-shvili",
         rating: 5,
         totalStudents: 0,
@@ -529,7 +529,7 @@ export const courses: ICoursePartial[] = [
     id: "8",
     category: ["IT & SOFTWARE"],
     thumbnail:
-      "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862193/lmsGenie%20assets/course/course3_ywumwu.jpg",
+      "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862193/lmsGenie%20assets/course/course3_ywumwu.jpg",
     totalEnrollments: 500,
     listPrice: {
       currencyCode: "USD",
@@ -560,7 +560,7 @@ export const courses: ICoursePartial[] = [
         biography: "Web Designer & Best-Selling Instructor",
         socialProfiles: undefined,
         profilePicture:
-          "https://res.cloudinary.com/doda2e5oe/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
+          "https://res.cloudinary.com/lmsgenie-storage/image/upload/v1694862573/lmsGenie%20assets/user/user1_lvbj0z.jpg",
         slug: "vako-shvili",
         rating: 5,
         totalStudents: 0,
