@@ -573,3 +573,75 @@ export const courses: ICoursePartial[] = [
     ],
   },
 ];
+
+export const faqs = [
+  {
+    id: "1",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "2",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "3",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "4",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "5",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "6",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "7",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "8",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "9",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "10",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "11",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "12",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "13",
+    question: "What is the best way to learn?",
+    answer: "The best way to learn is to practice and practice.",
+  },
+  {
+    id: "14",
+    question: "What is the best way to learn?",
+  },
+];
