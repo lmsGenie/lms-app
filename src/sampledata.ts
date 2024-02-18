@@ -576,75 +576,179 @@ export const courses: ICoursePartial[] = [
 
 export const FAQS = [
   {
-    id: "1",
-    question: "What is the best way to learn?",
-    answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, maxime! Praesentium, adipisci. Eos vitae ea corporis dolorem debitis id voluptates.",
+    id: "74114cdc-b545-415e-9aac-bcb865a94200",
+    heading: "FAQs section 1",
+    faqs: [
+      {
+        id: "64d79924-3699-475a-b9d1-e4f9d3702df1",
+        question: "What is the best way to learn?",
+        answer:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, maxime! Praesentium, adipisci. Eos vitae ea corporis dolorem debitis id voluptates.",
+      },
+      {
+        id: "cdd9f4d2-73c4-4bd1-8e34-4c4b2c46a30a",
+        question: "What is the best way to learn?",
+        answer:
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur cumque ratione accusamus. Magnam non adipisci veniam necessitatibus nobis esse vel fuga, error dolor quaerat inventore labore sequi rerum ullam earum?",
+      },
+      {
+        id: "924d25c1-21bd-4b54-906d-671a7d3e33d7",
+        question: "What is the best way to learn?",
+        answer:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iste dolorem illum quasi assumenda vero esse laudantium, culpa magni, alias aliquid doloremque, explicabo nisi accusamus ab ipsum.",
+      },
+      {
+        id: "c3d07eb4-ea76-4826-ae0c-abadab46ae84",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "4856f987-016f-4a8b-8d66-db4e6ecced56",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "8c4ad33a-172b-45e0-8f1c-228b7e012e10",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "10199e4c-2c38-460d-a83f-93f041b0a49b",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "952ce431-8b92-48c0-9383-2a9a743f4170",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "3ff964fc-3c30-4d08-9718-75d7e2bf113a",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "54961634-b387-4206-a6ae-2964d501a6c8",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "da860353-163b-4662-95ee-fdc0b4a61364",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "f9106f21-29e0-4ea2-8bf0-cd1a1e2a258c",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "0cfaa481-2902-4fd5-b4ed-8330445a4dbf",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: "c07829b1-3303-4d87-9559-e0813146f6d7",
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+    ],
   },
   {
-    id: "2",
-    question: "What is the best way to learn?",
-    answer:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur cumque ratione accusamus. Magnam non adipisci veniam necessitatibus nobis esse vel fuga, error dolor quaerat inventore labore sequi rerum ullam earum?",
+    id: "40996f66-a9a1-40e5-97f1-c251ee246d38",
+    heading: "FAQs section 2",
+    faqs: [
+      {
+        id: "bd875d9b-e3bc-48b4-b879-e0ecbb7e7970",
+        question: "What is the best way to learn new?",
+        answer:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, maxime! Praesentium, adipisci. Eos vitae ea corporis dolorem debitis id voluptates.",
+      },
+      {
+        id: "97b80f52-7243-4365-8533-d73e84167e2b",
+        question: "What is the best way to learn?",
+        answer:
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur cumque ratione accusamus. Magnam non adipisci veniam necessitatibus nobis esse vel fuga, error dolor quaerat inventore labore sequi rerum ullam earum?",
+      },
+    ],
   },
   {
-    id: "3",
-    question: "What is the best way to learn?",
-    answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iste dolorem illum quasi assumenda vero esse laudantium, culpa magni, alias aliquid doloremque, explicabo nisi accusamus ab ipsum.",
-  },
-  {
-    id: "4",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "5",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "6",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "7",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "8",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "9",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "10",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "11",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "12",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "13",
-    question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
-  },
-  {
-    id: "14",
-    question: "What is the best way to learn?",
+    id: "0f1ebade-e59e-44f6-b9d4-66c87e771c75",
+    heading: "FAQs section 3",
+    faqs: [
+      {
+        id: "acb79d9d-9b44-4a2c-b452-1011b16f8789",
+        question: "What is the best way to learn?",
+        answer:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, maxime! Praesentium, adipisci. Eos vitae ea corporis dolorem debitis id voluptates.",
+      },
+      {
+        id: "0b073a23-6412-4579-a9f0-3c49650fb703",
+        question: "What is the best way to learn?",
+        answer:
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur cumque ratione accusamus. Magnam non adipisci veniam necessitatibus nobis esse vel fuga, error dolor quaerat inventore labore sequi rerum ullam earum?",
+      },
+      {
+        id: "49a6d036-6bf2-4f37-bfbe-7e4be0555dde",
+        question: "What is the best way to learn?",
+        answer:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iste dolorem illum quasi assumenda vero esse laudantium, culpa magni, alias aliquid doloremque, explicabo nisi accusamus ab ipsum.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+      {
+        id: window.crypto.randomUUID(),
+        question: "What is the best way to learn?",
+        answer: "The best way to learn is to practice and practice.",
+      },
+    ],
   },
 ];
