@@ -112,7 +112,7 @@ export const users: IUserPartial[] = [
     loginCount: 100,
   },
   {
-    id: "1",
+    id: "2",
     firstName: "Alex",
     lastName: "Chem",
     email: "alex@gmail.com",
@@ -134,7 +134,7 @@ export const users: IUserPartial[] = [
     loginCount: 100,
   },
   {
-    id: "1",
+    id: "3",
     firstName: "Shivani",
     lastName: "Kumari",
     email: "shivani@gmail.com",
@@ -156,7 +156,7 @@ export const users: IUserPartial[] = [
     loginCount: 100,
   },
   {
-    id: "1",
+    id: "4",
     firstName: "Rahul",
     lastName: "Awasthi",
     email: "rahul@gmail.com",
@@ -178,7 +178,7 @@ export const users: IUserPartial[] = [
     loginCount: 100,
   },
   {
-    id: "1",
+    id: "5",
     firstName: "Jitendra",
     lastName: "Thakur",
     email: "jitu@gmail.com",

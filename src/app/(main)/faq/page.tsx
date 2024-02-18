@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { FAQS } from "@/sampledata.ts";
 
 import { IFaqs } from "@/types/accordion/index.ts";
@@ -9,6 +11,8 @@ import FaqHeading from "@/components/accordion/faq-heading.tsx";
 
 function AccordionPage() {
   const currentUrl = window.location.origin + window.location.pathname;
+
+  const searchParams = useSearchParams();
 
   const [active, setActive] = useState(FAQS[0].id);
   const [faqs, setFaqs] = useState<IFaqs[]>(FAQS[0].faqs);
@@ -19,18 +23,16 @@ function AccordionPage() {
   }
 
   useEffect(() => {
-    const fullUrl = window.location.href;
+    const accSection = searchParams.get("accSection");
 
-    if (fullUrl.includes("#")) {
-      const currentHeading = fullUrl.split("#")[1];
-
-      setActive(currentHeading);
-      faqFromUrl(currentHeading);
+    if (accSection) {
+      setActive(accSection);
+      faqFromUrl(accSection);
     }
-  }, [currentUrl]);
+  }, [searchParams]);
 
   const handleClick = (id: string) => {
-    const newPath = `${currentUrl}#${id}`;
+    const newPath = `${currentUrl}?accSection=${id}`;
 
     window.history.replaceState(null, "", newPath);
 
@@ -44,7 +46,10 @@ function AccordionPage() {
       <section className="flex flex-col items-center justify-center space-y-4 bg-slate-100 py-6 md:py-10">
         <h2 className="text-xl font-bold">FAQs</h2>
         <p className="text-xs">
-          <span className="text-gray-500">Home</span> / FAQs
+          <Link href="/" className="text-gray-500 hover:text-gray-700">
+            Home
+          </Link>{" "}
+          / FAQs
         </p>
       </section>
 
