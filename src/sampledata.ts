@@ -574,21 +574,24 @@ export const courses: ICoursePartial[] = [
   },
 ];
 
-export const faqs = [
+export const FAQS = [
   {
     id: "1",
     question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, maxime! Praesentium, adipisci. Eos vitae ea corporis dolorem debitis id voluptates.",
   },
   {
     id: "2",
     question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
+    answer:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur cumque ratione accusamus. Magnam non adipisci veniam necessitatibus nobis esse vel fuga, error dolor quaerat inventore labore sequi rerum ullam earum?",
   },
   {
     id: "3",
     question: "What is the best way to learn?",
-    answer: "The best way to learn is to practice and practice.",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iste dolorem illum quasi assumenda vero esse laudantium, culpa magni, alias aliquid doloremque, explicabo nisi accusamus ab ipsum.",
   },
   {
     id: "4",
