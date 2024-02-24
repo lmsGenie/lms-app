@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Button } from "../ui/button.tsx";
 import { Input } from "../ui/input.tsx";
 import { Textarea } from "../ui/textarea.tsx";
@@ -16,13 +14,13 @@ function FaqContact() {
         <Input
           type="text"
           placeholder="Subject"
-          className="w-full px-2 py-1 text-sm placeholder:text-sm"
+          className="w-full px-2 py-1 text-sm"
         />
         <Textarea
-          className="w-full px-2 py-1 text-sm placeholder:text-sm"
+          className="w-full px-2 py-1 text-sm"
           placeholder="Message" // FIXME: Needs fixing as this is not working for some reason
         />
-        <Button type="submit" variant="default" className="">
+        <Button type="submit" variant="default">
           Submit Question
         </Button>
       </form>
