@@ -7,6 +7,7 @@ import { FAQS } from "@/sampledata.ts";
 
 import { IFaqs } from "@/types/accordion/index.ts";
 import FaqAccordion from "@/components/accordion/faq-accordion.tsx";
+import FaqContact from "@/components/accordion/faq-contact.tsx";
 import FaqHeading from "@/components/accordion/faq-heading.tsx";
 
 function AccordionPage() {
@@ -61,14 +62,16 @@ function AccordionPage() {
           {/* Add a select menu */}
           {/* <select name="" id=""></select> */}
         </div>
-        <div className="flex flex-wrap items-start justify-between space-x-6">
-          <div className="flex-1">
+        <div className="flex flex-wrap items-start justify-between gap-6">
+          <div className="min-w-[261px] flex-1">
             <FaqHeading active={active} handleClick={handleClick} />
           </div>
-          <div className="flex-[2]">
+          <div className="min-w-[340px] flex-[2]">
             <FaqAccordion faqs={faqs} />
           </div>
-          <div className="flex-1">End</div>
+          <div className="min-w-[261px] flex-1">
+            <FaqContact />
+          </div>
         </div>
       </section>
     </main>
