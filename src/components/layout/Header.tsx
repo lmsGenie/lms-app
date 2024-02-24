@@ -1,5 +1,6 @@
 "use client";
 
+import { useId } from "react";
 import Link from "next/link.js";
 import { usePathname } from "next/navigation.js";
 import { categories } from "@/sampledata.ts";
@@ -33,6 +34,7 @@ import { Separator } from "../ui/separator.tsx";
 function Header() {
   /* Get the current route */
   const currentRoute = usePathname();
+  const id = useId();
 
   return (
     <header className="sticky top-0 z-10">
@@ -146,7 +148,7 @@ function Header() {
               <SelectContent>
                 {categories &&
                   categories.map((item) => (
-                    <SelectItem key={Date.now()} value={item.name}>
+                    <SelectItem key={id} value={item.name}>
                       {item.name}
                     </SelectItem>
                   ))}
@@ -225,7 +227,7 @@ function Header() {
                   <div className="font-semibold">Browse</div>
                   <ul className="pl-4">
                     {categories.map((item: any) => (
-                      <li className="my-2" key={Date.now()}>
+                      <li className="my-2" key={id}>
                         <Link href={item.path}>{item.name}</Link>
                       </li>
                     ))}

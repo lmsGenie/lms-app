@@ -7,6 +7,6 @@ module.exports = {
     "@typescript-eslint/quotes": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
-    "import/extensions": ["error", "always"],
+    "import/extensions": ["error", "ignorePackages"],
   },
 };

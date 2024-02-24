@@ -5,3 +5,4 @@ build
 .contentlayer
 coverage
 src/components/ui/*
+*.yaml
